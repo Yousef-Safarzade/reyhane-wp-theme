@@ -1,0 +1,291 @@
+@use 'mixins';
+
+footer{
+
+  padding-top: 25px;
+
+  .reyhane-widget-wrapper{
+
+    padding-top: 30px;
+
+    padding-bottom: 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 40px;
+
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+    }
+
+
+    @include mixins.tabletResponsive{
+
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+    .reyhane-widget-column {
+
+      border-right: 1px dashed var(--reyhane-color-400);
+
+      padding-right: 25px;
+
+      &:first-child,&:last-child{
+
+        border : none;
+
+      }
+
+
+      @include mixins.mobileResponsive{
+
+        text-align: center;
+
+        padding-right: 0;
+
+        max-width: 90%;
+
+        margin: 20px auto;
+
+        border: none;
+
+      }
+
+
+    }
+
+    .widget_reyhane_about{
+
+      img{
+
+        max-width: 50px;
+
+        margin-bottom: 10px;
+
+      }
+
+      .reyhane-about-widget-title{
+
+        margin-bottom: 5px;
+
+      }
+
+      .reyhane-about-widget-quote{
+
+        margin-top: 15px;
+
+        max-width: 290px;
+
+      }
+
+    }
+
+
+
+
+    .widget_reyhane_contact{
+
+      p{
+
+        max-width: 270px;
+
+      }
+
+    }
+
+
+    .reyhane-social-icons-wrapper{
+
+      display: flex;
+
+      gap: 5px;
+
+      .reyhane-social-icon-widget-item{
+
+        width: 35px;
+
+        height: 35px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background-color: var(--reyhane-color-primary-200);
+
+        border-radius: 10px;
+
+        svg{
+
+          width: 18px;
+
+          height: 18px;
+
+        }
+
+        &.whatsapp{
+
+          path{
+
+            fill : var(--reyhane-accent-color);
+
+          }
+
+        }
+
+
+        &.email,&.telegram,&.instagram{
+
+          path{
+
+            stroke : var(--reyhane-accent-color);
+
+          }
+
+          circle{
+
+            stroke : var(--reyhane-accent-color);
+
+            &:last-child{
+
+              fill: var(--reyhane-accent-color);
+            }
+
+          }
+
+
+
+        }
+
+      }
+
+
+
+
+    }
+
+
+  }
+
+
+
+  .reyhane-copyright-text-wrapper {
+
+    padding-top: 18px;
+
+    padding-bottom: 18px;
+
+  }
+
+
+  .reyhane-footer-banner{
+
+
+    .reyhane-footer-banner-wrapper{
+
+
+      margin-bottom: 25px;
+
+      position: relative;
+
+      border-radius: 24px;
+
+      background-repeat: no-repeat;
+
+      background-position:center;
+
+      background-size:cover;
+
+      min-height: 320px;
+
+      overflow: hidden;
+
+      @include mixins.mobileResponsive{
+
+        max-width: 90%;
+
+        margin: 0 auto;
+
+        padding: 20px 0;
+
+      }
+
+
+      @include mixins.tabletResponsive{
+
+        max-width: 90%;
+
+        margin: 0 auto;
+
+        padding: 20px 0;
+
+      }
+
+      .reyhane-footer-banner-overlay {
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: rgb(0, 0, 0, 0.15);
+
+        z-index: 0;
+
+      }
+
+      *{
+
+        z-index: 1;
+
+      }
+
+      .reyhane-footer-banner-main-title{
+
+        margin-bottom: 10px;
+
+      }
+
+      .reyhane-footer-banner-icon{
+
+        margin-bottom: 15px;
+
+      }
+
+      .reyhane-footer-banner-buttons-container{
+
+        @include mixins.mobileResponsive{
+
+          flex-direction: column;
+
+        }
+
+      }
+
+
+
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+}

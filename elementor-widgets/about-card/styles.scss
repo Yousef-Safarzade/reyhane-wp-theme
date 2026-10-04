@@ -1,0 +1,181 @@
+@use '../../assets/css/mixins';
+
+.reyhane-about-card-main-container{
+
+  background: var(--reyhane-color-50);
+
+  border-radius: 24px;
+
+  padding: 64px 48px;
+
+  display: flex;
+
+  flex-direction: row;
+
+  direction: rtl;
+
+  gap : 65px;
+
+  @include mixins.mobileResponsive{
+
+    flex-direction: column-reverse;
+
+    padding: 24px;
+
+    gap: 40px;
+
+
+  }
+
+  .reyhane-about-card-image-container{
+
+    max-width: 355px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+  }
+
+  .reyhane-about-card-meta-container{
+
+    display: flex;
+
+    flex-direction: column;
+
+    @include mixins.mobileResponsive{
+
+      text-align: right;
+
+      align-items: flex-start;
+
+    }
+
+    .reyhane-about-card-badge-container{
+
+        width: 120px;
+
+        height: 30px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-direction: row;
+
+        direction: rtl;
+
+        background: var( --reyhane-color-secondary-600);
+
+        padding: 8px;
+
+        gap: 6px;
+
+        border-radius: 24px;
+
+        margin-bottom: 24px;
+
+        .reyhan-about-card-badge-text{
+
+          font : var(--reyhane-typography-c1);
+
+          color : var(--reyhane-color-50);
+
+          margin-bottom: 0;
+
+        }
+
+        .reyhan-about-card-badge-icon{
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          svg{
+
+            width: 18px;
+
+            height: 18px;
+
+            path{
+
+              fill: var(--reyhane-color-50);
+
+            }
+
+          }
+
+
+        }
+
+    }
+
+
+    .reyhane-about-card-title{
+
+      font:var(--reyhane-typography-h4);
+
+      color: var(--reyhane-netural-color-900);
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .reyhane-about-card-subtitle-container {
+
+      display: flex;
+
+      flex-direction: row;
+
+      gap: 8px;
+
+      p{
+
+        font:var(--reyhane-typography-b2);
+
+        color : var(--reyhane-color-netural-600);
+
+        margin-bottom: 0;
+
+      }
+
+      margin-bottom: 24px;
+
+    }
+
+
+
+    .reyhane-about-card-description{
+
+      font:var(--reyhane-typography-b1);
+
+      color : var(--reyhane-color-netural-600);
+
+      margin-bottom: 24px;
+
+    }
+
+    .reyhane-about-card-cta{
+
+      font : var(--reyhane-typography-s2);
+
+      background: var(--reyhane-color-primary-600);
+
+      color : var(--reyhane-color-50);
+
+      max-width: 141px;
+
+      justify-content: center;
+
+
+    }
+
+  }
+
+
+}

@@ -1,0 +1,477 @@
+@use "mixins";
+
+.single-reyhane-services{
+
+
+  .reyhane-service-main-wrapper{
+
+    display: grid;
+
+    direction: rtl;
+
+    margin-top: 35px;
+
+    margin-bottom: 35px;
+
+    grid-template-columns: 285px minmax(0, 1fr) ;
+
+    gap: 30px;
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+      max-width: 90% !important;
+
+      margin: 20px auto;
+
+    }
+
+    .reyhane-service-sidebar {
+
+      padding: 24px;
+
+      border-radius: 12px;
+
+      max-height: fit-content;
+
+      @include mixins.mobileResponsive{
+
+        padding: 24px 12px;
+
+      }
+
+      ul.services-list-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        margin-right: 0;
+
+        padding-right: 0;
+
+        list-style: none;
+
+        @include mixins.mobileResponsive{
+
+
+          display: grid;
+
+          grid-template-columns: 1fr 1fr;
+
+        }
+
+        li{
+
+          a{
+
+            height: 50px;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding-right: 16px;
+
+            background-color: var(--reyhane-color-netural-200);
+
+            color: var(--reyhane-netural-color-700);
+
+            font : var(--reyhane-typography-s2);
+
+            &.active{
+
+              background-color: var(--reyhane-color-primary-200);
+
+              color: var(--reyhane-accent-color);
+
+            }
+
+            &:hover{
+
+              background-color: var(--reyhane-color-primary-200);
+
+              color: var(--reyhane-accent-color);
+
+            }
+
+            @include mixins.mobileResponsive{
+
+              font-size: 14px;
+
+            }
+
+          }
+
+
+
+        }
+
+      }
+
+
+    }
+
+
+
+
+
+
+
+    .reyhane-service-content{
+
+      .reyhane-service-top-bar{
+
+        height: 65px;
+
+        display: flex;
+
+        align-items: center;
+
+        padding: 8px 16px;
+
+        background-color: var(--reyhane-color-50);
+
+        border-radius: 12px;
+
+        width: 100%;
+
+        margin-bottom: 24px;
+
+        @include mixins.mobileResponsive{
+
+          display: none;
+
+        }
+
+        ul.reyhane-service-detail-top-bar-list-container{
+
+          list-style: none;
+
+          padding: 0;
+
+          display: flex;
+
+          flex-direction: row;
+
+          gap: 8px;
+
+          li{
+
+            a{
+
+              padding: 12px 24px;
+
+              font : var(--reyhane-typography-s2);
+
+              color : var(--reyhane-netural-color-700);
+
+              border-radius: 12px;
+
+              @include mixins.mobileResponsive{
+
+                padding: 12px 5px;
+
+                font-size: 14px;
+
+              }
+
+              &.active{
+
+                background-color: var(--reyhane-color-primary-200);
+
+                color: var(--reyhane-accent-color);
+
+              }
+
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+      .reyhane-service-content-detail{
+
+        border-radius: 12px;
+
+        background-color: var(--reyhane-color-50);
+
+        padding: 32px;
+
+        .reyhane-service-detail-main-title{
+
+          font:var(--reyhane-typography-h5);
+
+          color: var(--reyhane-accent-color);
+
+        }
+
+        .reyhane-service-detail-short-description{
+
+          font:var(--reyhane-typography-s2);
+
+          color:var(--reyhane-netural-color-900);
+
+          margin-bottom: 24px;
+
+        }
+
+        .reyhane-service-detail-content-text{
+
+          p{
+
+            font: var(--reyhane-typography-b1);
+
+            color: var(--reyhane-netural-color-700);
+
+          }
+
+          h3{
+
+            font: var(--reyhane-typography-s1);
+
+            color: var(--reyhane-netural-color-900);
+
+          }
+
+        }
+
+      }
+
+
+
+    }
+
+
+    .reyhane-service-faq{
+
+      margin-top: 24px;
+
+      .service-detail-faq-section-title{
+
+        font:var(--reyhane-typography-s1);
+
+        color:var(--reyhane-color-netural-900);
+
+      }
+
+    }
+
+
+
+
+
+
+    .reyhane-service-detail-gallery{
+
+      margin-top: 24px;
+
+      .service-detail-gallery-section-title{
+
+        font:var(--reyhane-typography-s1);
+
+        color:var(--reyhane-color-netural-900);
+
+      }
+
+      .reyhane-service-detail-gallery-wrapper{
+
+        border-radius: 12px;
+
+        background-color: var(--reyhane-color-50);
+
+        padding: 32px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        gap: 10px;
+
+        @include mixins.mobileResponsive{
+
+          grid-template-columns: 1fr;
+
+        }
+
+        a{
+
+          display: block;
+
+          border-radius: 12px;
+
+          overflow: hidden;
+
+          @include mixins.mobileResponsive{
+
+            max-width: 300px;
+
+            margin: 0 auto;
+
+          }
+
+          img{
+
+            border-radius: 12px;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
+  .reyhane-service-detail-banner{
+
+    position: relative;
+
+    height: 450px;
+
+    display: flex;
+
+    direction: rtl;
+
+    align-items: center;
+
+    background-repeat: no-repeat;
+
+    background-position: left center;
+
+    background-size: cover;
+
+    @include mixins.mobileResponsive{
+
+      justify-content: center;
+
+      text-align: center;
+
+      height: auto;
+
+      padding-top: 30px;
+
+      background-image: none !important;
+
+      flex-direction: column;
+
+    }
+
+
+
+    .reyhane-service-detail-banner-content-wrapper {
+
+      @include mixins.mobileResponsive{
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+      }
+
+    }
+
+
+
+    .reyhane-service-detail-banner-main-title{
+
+      z-index: 1;
+
+      @include mixins.mobileResponsive{
+
+       font: var(--reyhane-typography-h5);
+
+      }
+
+    }
+
+    .reyhane-service-detail-banner-description{
+
+      z-index: 1;
+
+      max-width: 450px;
+
+      margin-bottom: 0;
+
+      @include mixins.mobileResponsive{
+
+        font: var(--reyhane-typography-b2);
+
+        max-width: 320px;
+
+      }
+
+    }
+
+    .reyhane-service-detail-banner-button-container{
+
+      z-index: 1;
+
+      display: flex;
+
+      gap: 16px;
+
+      margin-top: 32px;
+
+      @include mixins.mobileResponsive{
+
+        justify-content: center;
+
+        align-items: center;
+
+
+      }
+
+
+    }
+
+
+    .reyhane-service-detail-banner-responsive-image{
+
+      display: none;
+
+      background-repeat: no-repeat;
+
+      background-position: center;
+
+      background-size: cover;
+
+      @include mixins.mobileResponsive{
+
+          margin-top: 50px;
+
+          display: block;
+
+          min-height: 400px;
+
+          width: 100%;
+
+
+      }
+
+    }
+
+  }
+
+
+}

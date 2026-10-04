@@ -1,0 +1,692 @@
+@use 'styleGuide';
+
+@use 'mixins';
+
+
+/* ==========================================
+   Layout
+========================================== */
+
+.reyhane-container {
+
+  max-width: var(--reyhane-container-width) !important;
+
+  width: 100%;
+
+}
+
+
+@include mixins.mobileResponsive{
+
+  .reyhane-hidden-mobile{
+
+    display: none !important;
+
+  }
+
+}
+
+
+
+.reyhane-rtl{
+
+  direction: rtl;
+
+}
+
+.reyhane-center-container{
+
+  margin : 0 auto;
+
+}
+
+.reyhane-flex {
+  display: flex;
+}
+
+.reyhane-flex-col {
+  flex-direction: column;
+}
+
+.reyhane-flex-row {
+  flex-direction: row;
+}
+
+.reyhane-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.reyhane-items-center {
+  align-items: center;
+}
+
+.reyhane-items-start {
+  align-items: flex-start;
+}
+
+.reyhane-items-end {
+  align-items: flex-end;
+}
+
+.reyhane-justify-center {
+  justify-content: center;
+}
+
+.reyhane-justify-between {
+  justify-content: space-between;
+}
+
+.reyhane-justify-start {
+  justify-content: flex-start;
+}
+
+.reyhane-justify-end {
+  justify-content: flex-end;
+}
+
+.reyhane-flex-1 {
+  flex: 1;
+}
+
+.reyhane-shrink-0 {
+  flex-shrink: 0;
+}
+
+.reyhane-grow {
+  flex-grow: 1;
+}
+
+.reyhane-gap-1 {
+  gap: 0.25rem;
+}
+
+.reyhane-gap-2 {
+  gap: 0.5rem;
+}
+
+.reyhane-gap-3 {
+  gap: 0.75rem;
+}
+
+.reyhane-gap-4 {
+  gap: 1rem;
+}
+
+.reyhane-gap-6 {
+  gap: 1.5rem;
+}
+
+.reyhane-gap-8 {
+  gap: 2rem;
+}
+
+.reyhane-margin-0{
+  margin:0
+}
+
+.reyhane-margin-top-0{
+  margin-top:0
+}
+
+.reyhane-margin-bottom-0{
+  margin-bottom:0
+}
+
+.reyhane-margin-left-0{
+  margin-left:0
+}
+
+.reyhane-margin-right-0{
+  margin-right:0
+}
+
+
+
+.reyhane-border-radius-24{
+
+  border-radius: 24px;
+
+}
+
+.reyhane-border-radius-12{
+
+  border-radius: 12px;
+
+}
+
+
+
+
+.reyhane-border-radius-8{
+
+  border-radius: 8px;
+
+}
+
+
+
+
+
+
+/* ==========================================
+   Colors
+========================================== */
+
+
+.reyhane-accent-color{
+
+  color : var(--reyhane-accent-color);
+
+}
+
+.reyhane-color-50{
+
+  color : var(--reyhane-color-50);
+
+}
+
+
+.reyhane-color-netural-700{
+
+  color : var(--reyhane-netural-color-700);
+
+}
+
+.reyhane-color-netural-600{
+
+  color : var(--reyhane-color-netural-600);
+
+}
+
+
+.reyhane-color-netural-500{
+
+  color : var(--reyhane-color-netural-500);
+
+}
+
+
+
+.reyhane-color-netural-200{
+
+  color : var(--reyhane-color-netural-200);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.reyhane-netural-color-900{
+
+  color : var(--reyhane-netural-color-900);
+
+}
+
+
+.reyhane-color-400{
+
+  color : var(--reyhane-color-400);
+
+}
+
+
+.reyhane-color-primary-600{
+
+  color : var(--reyhane-color-primary-600);
+
+}
+
+
+
+
+
+
+.reyhane-color-secondary-600{
+
+  color: var(--reyhane-color-seondary-600);
+
+}
+
+/* ==========================================
+   Background Colors
+========================================== */
+
+.reyhane-bg-accent-color{
+
+  background-color : var(--reyhane-accent-color);
+
+}
+
+
+
+.reyhane-bg-color-netural-600{
+
+  background-color : var(--reyhane-color-netural-600);
+
+}
+
+
+
+.reyhane-bg-color-netural-500{
+
+  background-color : var(--reyhane-color-netural-500);
+
+}
+
+
+.reyhane-bg-color-netural-200{
+
+  background-color : var(--reyhane-color-netural-200);
+
+}
+
+
+
+
+
+.reyhane-bg-color-50{
+
+  background-color : var(--reyhane-color-50);
+
+}
+
+.reyhane-bg-netural-color-900{
+
+  background-color : var(--reyhane-netural-color-900);
+
+}
+
+
+.reyhane-bg-color-400{
+
+  background-color : var(--reyhane-color-400);
+
+}
+
+
+
+.reyhane-bg-color-primary-600{
+
+  background-color : var(--reyhane-color-primary-600);
+
+}
+
+
+
+
+.reyhane-bg-color-secondary-600{
+
+  background-color: var(--reyhane-color-seondary-600);
+
+}
+
+
+
+
+/* ==========================================
+   Typography
+========================================== */
+
+.reyhane-font-yekan-bakh {
+
+  font-family: var(--reyhane-yekan-bakh-font) !important;
+
+}
+
+
+body{
+
+  background-color: #F1F1F1;
+
+}
+
+
+body.rtl, html[dir=rtl]{
+
+  --e-global-typography-primary-font-family : var(--reyhane-yekan-bakh-font);
+
+  --e-global-typography-text-font-family : var(--reyhane-yekan-bakh-font);
+
+}
+
+
+
+.reyhane-h1 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-h1); }
+
+  font: var(--reyhane-typography-h1);
+
+}
+
+.reyhane-h2 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-h2); }
+
+  font: var(--reyhane-typography-h2);
+
+}
+
+.reyhane-h3 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-h3); }
+
+  font: var(--reyhane-typography-h3);
+
+}
+
+.reyhane-h4 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-h4); }
+
+  font: var(--reyhane-typography-h4);
+
+}
+
+
+
+
+.reyhane-typography-s1 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-s2); }
+
+  font: var(--reyhane-typography-s2);
+
+}
+
+
+
+.reyhane-typography-s2 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-s2); }
+
+  font: var(--reyhane-typography-s2);
+
+}
+
+
+
+
+
+.reyhane-typography-b1 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-b1); }
+
+  font: var(--reyhane-typography-b1);
+
+}
+
+.reyhane-typography-b2 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-b2); }
+
+  font: var(--reyhane-typography-b2);
+
+}
+
+.reyhane-typography-b3 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-b3); }
+
+  font: var(--reyhane-typography-b3);
+
+}
+
+
+
+
+
+.reyhane-typography-c1 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-c1); }
+
+  font: var(--reyhane-typography-c1);
+
+}
+
+.reyhane-typography-c2 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-c2); }
+
+  font: var(--reyhane-typography-c2);
+
+}
+
+.reyhane-typography-c3 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-b3); }
+
+  font: var(--reyhane-typography-c3);
+
+}
+
+
+.reyhane-typography-body-large {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-body-large); }
+
+  font: var(--reyhane-typography-body-large);
+
+}
+
+.reyhane-typography-body-medium {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-body-medium); }
+
+  font: var(--reyhane-typography-body-medium);
+
+}
+
+.reyhane-typography-body-small {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-body-small); }
+
+  font: var(--reyhane-typography-body-small);
+
+}
+
+.reyhane-typography-button-large {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-button-large); }
+
+  font: var(--reyhane-typography-button-large);
+
+}
+
+.reyhane-typography-button-medium {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-button-medium); }
+
+  font: var(--reyhane-typography-button-medium);
+
+}
+
+.reyhane-typography-button-small {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--reyhane-typography-button-small); }
+
+  font: var(--reyhane-typography-button-small);
+
+}
+
+
+
+
+
+
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.reyhane-button-large{
+
+  gap : 8px;
+
+  padding-left : 16px;
+
+  padding-right: 16px;
+
+  height: 48px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  .reyhane-button-text{
+
+    font : var(--reyhane-typography-s2);
+
+  }
+
+  .reyhane-button-icon{
+
+    width: 24px;
+
+    height: 24px;
+
+  }
+
+
+}
+
+
+
+
+
+.reyhane-button-medium{
+
+  gap : 8px;
+
+  padding-left : 14px;
+
+  padding-right: 14px;
+
+  height: 40px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  .reyhane-button-text{
+
+    font : var(--reyhane-typography-b3);
+
+  }
+
+  .reyhane-button-icon{
+
+    width: 20px;
+
+    height: 20px;
+
+  }
+
+
+}
+
+
+
+.reyhane-button-small{
+
+  gap : 8px;
+
+  padding-left : 12px;
+
+  padding-right: 12px;
+
+  height: 32px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  .reyhane-button-text{
+
+    font : var(--reyhane-typography-c2);
+
+  }
+
+  .reyhane-button-icon{
+
+    width: 16px;
+
+    height: 16px;
+
+  }
+
+}
+
+
+
+
+.reyhane-button-primary{
+
+  color : var(--reyhane-color-50);
+
+  background-color: var(--reyhane-color-primary-600);
+
+  &:hover{
+
+    color : var(--reyhane-color-50);
+
+    background-color: var(--reyhane-color-primary-700);
+
+  }
+
+  &.disabled{
+
+    color: var(--reyhane-color-netural-500);
+
+    background-color: var(--reyhane-color-netural-200);
+
+    pointer-events: none;
+
+  }
+
+}
+
+
+
+
+
+
+
+/* ==========================================
+   Header
+========================================== */
+
+@import "header";
+
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+@import 'footer';
+
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+@import "faq";
+
+
+

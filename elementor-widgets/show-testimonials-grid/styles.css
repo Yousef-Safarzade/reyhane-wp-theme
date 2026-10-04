@@ -1,0 +1,74 @@
+.reyhane-show-testimonials-grid-main-container {
+  padding: 48px;
+  border-radius: 24px;
+  background-color: var(--reyhane-color-primary-600);
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .reyhane-show-testimonials-grid-main-container {
+    padding: 48px 24px;
+  }
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-top-title {
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-50);
+  text-align: center;
+  margin-bottom: 0;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-fade-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container {
+    grid-template-columns: 1fr;
+  }
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item {
+  padding: 30px 15px;
+  background-color: var(--reyhane-color-50);
+  border-radius: 16px;
+  direction: rtl;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-testimonials-grid-item-stars {
+  margin-bottom: 20px;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-testimonials-grid-item-description {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-netural-color-900);
+  min-height: 115px;
+}
+@media (max-width: 576px) {
+  .reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-testimonials-grid-item-description {
+    min-height: 80px;
+  }
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-services-grid-item-meta {
+  display: flex;
+  gap: 10px;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-services-grid-item-meta .reyhane-show-services-grid-item-author-info .reyhane-show-services-grid-item-author-name {
+  font: var(--reyhane-typography-b3);
+  color: var(--reyhane-netural-color-900);
+  margin-bottom: 0;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-services-grid-item-meta .reyhane-show-services-grid-item-author-info .reyhane-show-services-grid-item-author-date {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-500);
+  margin-bottom: 0;
+}
+.reyhane-show-testimonials-grid-main-container .reyhane-show-testimonials-grid-items-container .reyhane-show-testimonials-grid-item .reyhane-show-services-grid-item-meta .reyhane-show-services-grid-item-author-avatar-container img {
+  width: 32px;
+  height: auto;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=styles.css.map */

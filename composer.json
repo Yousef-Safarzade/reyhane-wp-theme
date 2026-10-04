@@ -1,0 +1,15 @@
+{
+    "name": "joseph/reyhane",
+    "autoload": {
+        "psr-4": {
+            "Reyhane\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yousef Safarzade",
+            "email": "jo.safarzade@gmail.com"
+        }
+    ],
+    "require": {}
+}
