@@ -30,7 +30,7 @@ class reyhane_contact extends \WP_Widget
         "<p class='reyhane-typography-b2 reyhane-color-netural-600'>%s</p>
                 <p class='reyhane-typography-b2 reyhane-color-netural-900'>%s</p>",
                 'آدرس مطب' ,
-                $instance['address']
+                    \Reyhane\helper::englishToPersianNumber( $instance['address'] )
             );
 
 
@@ -45,7 +45,7 @@ class reyhane_contact extends \WP_Widget
         "<p class='reyhane-typography-b2 reyhane-color-netural-600'>%s</p>
                 <p class='reyhane-typography-b2 reyhane-color-netural-900'>%s</p>",
                 'شماره تماس' ,
-                $instance['phone']
+                    \Reyhane\helper::englishToPersianNumber( $instance['phone'] )
             );
 
         }

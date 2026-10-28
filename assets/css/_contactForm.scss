@@ -1,0 +1,235 @@
+@use "mixins";
+
+
+.wpcf7[data-wpcf7-id='233']{
+
+  width: 100%;
+
+  max-width: 670px;
+
+  background-color: var(--reyhane-color-netural-50);
+
+  padding: 48px 64px;
+
+  border-radius: 16px;
+
+  direction: rtl;
+
+  @include mixins.mobileResponsive{
+
+    padding: 32px 16px;
+
+
+  }
+
+
+  .reyhane-contact-form-split-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+      gap: 0;
+
+
+    }
+
+  }
+
+
+
+
+  .reyhane-contact-form-full-row {
+
+    input,label{
+
+      width: 100%;
+
+    }
+
+  }
+
+
+  label{
+
+    font : var(--reyhane-typography-b1);
+
+    color : var(--reyhane-color-netural-900);
+
+    @include mixins.mobileResponsive{
+
+      margin-bottom: 24px;
+
+    }
+
+  }
+
+
+  .wpcf7-text,.wpcf7-tel{
+
+    margin-top: 8px;
+
+    height: 48px;
+
+    padding-right: 12px;
+
+    font : var(--reyhane-typography-s2);
+
+    color : var(--reyhane-color-netural-900);
+
+    border-radius: 12px;
+
+    border:1px solid var(--reyhane-color-netural-200);
+
+    &:focus{
+
+      outline: none;
+
+      border:1px solid var(--reyhane-accent-color);
+
+    }
+
+
+
+  }
+
+
+
+  .wpcf7-textarea{
+
+    margin-top: 8px;
+
+    border-radius: 12px;
+
+    max-height: 120px;
+
+    font : var(--reyhane-typography-s2);
+
+    color : var(--reyhane-color-netural-900);
+
+    border:1px solid var(--reyhane-color-netural-200);
+
+    &:focus{
+
+      outline: none;
+
+      border:1px solid var(--reyhane-accent-color);
+
+    }
+
+
+
+  }
+
+
+  .reyhane-contact-form-submit-container{
+
+    position: relative;
+
+    > p{
+
+      margin-bottom: 0;
+
+    }
+
+    .wpcf7-submit{
+
+      width: 100%;
+
+      border-radius: 12px;
+
+      background-color : var(--reyhane-accent-color);
+
+      color : var(--reyhane-color-netural-50);
+
+      height : 48px;
+
+      display : flex;
+
+      align-items : center;
+
+      justify-content : center;
+
+      border : none;
+
+      font : var(--reyhane-typography-s1);
+
+
+      transition: background-color linear 0.1s;
+
+      &:hover {
+
+        background-color: var(--reyhane-color-primary-700);
+
+      }
+
+
+
+
+
+
+      }
+
+
+  }
+
+
+
+  .wpcf7-not-valid-tip {
+
+    margin-top: 10px;
+
+    font : var(--reyhane-typography-b2);
+
+  }
+
+
+  .wpcf7-response-output{
+
+    font : var(--reyhane-typography-b1);
+
+    color : var(--reyhane-color-netural-900);
+
+    border: none !important;
+
+    padding: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+
+  form.submitting{
+
+    .reyhane-contact-form-submit-container {
+
+      > p {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        align-items: center;
+
+
+      }
+
+    }
+
+
+  }
+
+}
+

@@ -1,0 +1,104 @@
+@use '../../assets/css/mixins';
+
+.reyhane-blog-grid{
+
+  direction: rtl;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+  
+  flex-direction: column;
+
+  .reyhane-blog-grid-top-bar{
+
+    display: flex;
+
+    flex-direction: row;
+
+    width: 100%;
+
+    margin-bottom: 32px;
+
+    @include mixins.mobileResponsive{
+
+      max-width: 320px;
+
+      margin: 0 auto 32px auto;
+
+
+    }
+
+    .reyhane-blog-grid-top-bar-right-col{
+
+      font:var(--reyhane-typography-h4);
+
+      color: var(--reyhane-color-netural-900);
+
+      margin-bottom: 0;
+
+    }
+
+    .reyhane-blog-grid-top-bar-left-col{
+
+      margin-right: auto;
+
+      margin-bottom: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      .reyhane-blog-grid-show-all-cta-title{
+
+        a{
+
+          font:var(--reyhane-typography-b2);
+
+          color: var(--reyhane-color-netural-900);
+
+        }
+
+      }
+
+      .reyhane-blog-grid-show-all-cta-icon{
+
+        display: flex;
+
+        align-items: center;
+
+      }
+
+
+
+    }
+
+  }
+
+
+  .reyhane-blog-grid-items-container{
+
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 40px;
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+
+    }
+
+
+  }
+  
+
+
+}

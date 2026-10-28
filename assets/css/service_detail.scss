@@ -9,9 +9,9 @@
 
     direction: rtl;
 
-    margin-top: 35px;
+    margin-top: 35px !important;
 
-    margin-bottom: 35px;
+    margin-bottom: 35px !important;
 
     grid-template-columns: 285px minmax(0, 1fr) ;
 
@@ -80,7 +80,7 @@
 
             background-color: var(--reyhane-color-netural-200);
 
-            color: var(--reyhane-netural-color-700);
+            color: var(--reyhane-color-netural-700);
 
             font : var(--reyhane-typography-s2);
 
@@ -135,7 +135,7 @@
 
         padding: 8px 16px;
 
-        background-color: var(--reyhane-color-50);
+        background-color: var(--reyhane-color-netural-50);
 
         border-radius: 12px;
 
@@ -169,7 +169,7 @@
 
               font : var(--reyhane-typography-s2);
 
-              color : var(--reyhane-netural-color-700);
+              color : var(--reyhane-color-netural-700);
 
               border-radius: 12px;
 
@@ -203,7 +203,7 @@
 
         border-radius: 12px;
 
-        background-color: var(--reyhane-color-50);
+        background-color: var(--reyhane-color-netural-50);
 
         padding: 32px;
 
@@ -219,7 +219,7 @@
 
           font:var(--reyhane-typography-s2);
 
-          color:var(--reyhane-netural-color-900);
+          color:var(--reyhane-color-netural-900);
 
           margin-bottom: 24px;
 
@@ -227,11 +227,11 @@
 
         .reyhane-service-detail-content-text{
 
-          p{
+          p,ul,li,tr,td,th{
 
             font: var(--reyhane-typography-b1);
 
-            color: var(--reyhane-netural-color-700);
+            color: var(--reyhane-color-netural-700);
 
           }
 
@@ -239,7 +239,16 @@
 
             font: var(--reyhane-typography-s1);
 
-            color: var(--reyhane-netural-color-900);
+            color: var(--reyhane-color-netural-900);
+
+          }
+
+
+          h2{
+
+            font: var(--reyhane-typography-s1);
+
+            color: var(--reyhane-color-netural-900);
 
           }
 
@@ -287,7 +296,7 @@
 
         border-radius: 12px;
 
-        background-color: var(--reyhane-color-50);
+        background-color: var(--reyhane-color-netural-50);
 
         padding: 32px;
 
@@ -374,6 +383,13 @@
     }
 
 
+    @include mixins.veryLargeScreen{
+
+      height: 550px;
+
+    }
+
+
 
     .reyhane-service-detail-banner-content-wrapper {
 
@@ -411,7 +427,11 @@
 
       max-width: 450px;
 
-      margin-bottom: 0;
+      font: var(--reyhane-typography-b1);
+
+      color: var(--reyhane-color-netural-700);
+
+      margin-bottom: 32px;
 
       @include mixins.mobileResponsive{
 

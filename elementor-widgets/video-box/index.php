@@ -130,7 +130,7 @@ class reyhane_video_box_widget extends \Elementor\Widget_Base {
 
         ob_start(); ?>
 
-        <div class="reyhane-video-box-container" style="width : <?php echo $settings['width']; ?>px">
+        <div class="reyhane-video-box-container" style="width : 100% ; max-width : <?php echo $settings['width']; ?>px">
 
             <div class="reyhane-video-box-icon-container">
 
@@ -148,7 +148,7 @@ class reyhane_video_box_widget extends \Elementor\Widget_Base {
 
             </div>
 
-            <video poster="<?php echo $settings['poster']['url']; ?>" playsinline loop>
+            <video poster="<?php echo $settings['poster']['url']; ?>" playsinline loop style="width : 100%">
 
                 <source src="<?php echo $settings['video']['url'] ?>" type="video/mp4">
 

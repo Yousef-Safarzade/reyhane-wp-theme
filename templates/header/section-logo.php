@@ -1,7 +1,11 @@
-<div class="reyhane-header-logo-wrapper reyhane-flex reyhane-items-center">
+<a class="reyhane-header-logo-wrapper reyhane-flex reyhane-items-center" href="<?php echo \Reyhane\config::$websiteUrl ?>" title="<?php echo \Reyhane\ThemeSettings::get_theme_setting('header_main_logo_text'); ?>">
 
-    <img class="reyhane-header-logo-image" src="http://reyhane.local/wp-content/uploads/2026/09/Logo-1.png">
+    <img class="reyhane-header-logo-image" src="<?php echo \Reyhane\ThemeSettings::get_theme_setting('header_main_logo')['url'] ?>">
 
-    <p class="reyhane-header-logo-text">دکتـر ریحانـه قنبری جهرمی</p>
+    <p class="reyhane-header-logo-text">
 
-</div>
+        <?php echo \Reyhane\ThemeSettings::get_theme_setting('header_main_logo_text'); ?>
+
+    </p>
+
+</a>

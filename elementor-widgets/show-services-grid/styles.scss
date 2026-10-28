@@ -44,11 +44,13 @@
 
     justify-content: center;
 
-    background-color: var(--reyhane-color-50);
+    background-color: var(--reyhane-color-netural-50);
 
     border-radius: 16px;
 
     flex-direction: column;
+
+    transition: all linear 0.2s;
 
     @include mixins.mobileResponsive{
 
@@ -70,7 +72,7 @@
 
       font: var(--reyhane-typography-s2);
 
-      color : var(--reyhane-netural-color-900);
+      color : var(--reyhane-color-netural-900);
 
       margin-bottom: 8px;
 
@@ -83,6 +85,13 @@
       color : var(--reyhane-color-netural-600);
 
       margin-bottom: 0;
+
+    }
+
+    &:hover{
+
+      box-shadow: 0px 9px 30px 0px var(  --reyhane-color-netural-400 );
+
 
     }
 

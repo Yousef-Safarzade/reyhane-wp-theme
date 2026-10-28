@@ -33,6 +33,11 @@ class widgets
 
         register_widget( 'reyhane_social_icons' );
 
+
+        require_once ("widget_show_categories.php");
+
+        register_widget( 'reyhane_show_categories' );
+
     }
 
 }

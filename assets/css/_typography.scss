@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Yekan Bakh';
+  src: url('../fonts/yekan-bakh-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yekan Bakh';
+  src: url('../fonts/yekan-bakh-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yekan Bakh';
+  src: url('../fonts/yekan-bakh-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yekan Bakh';
+  src: url('../fonts/yekan-bakh-heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root{
+
+  --reyhane-yekan-bakh-font: 'Yekan Bakh';
+
+  --e-global-typography-primary-font-family : var(--reyhane-yekan-bakh-font);
+
+  --e-global-typography-text-font-family : var(--reyhane-yekan-bakh-font);
+
+  --reyhane-typography-h1 : var(--reyhane-typography-h1-font-weight) var(--reyhane-typography-h1-font-size)/var(--reyhane-typography-h1-line-height) var(--reyhane-typography-h1-font-family);
+
+  --reyhane-typography-h2 : var(--reyhane-typography-h2-font-weight) var(--reyhane-typography-h2-font-size)/var(--reyhane-typography-h2-line-height) var(--reyhane-typography-h2-font-family);
+
+  --reyhane-typography-h3 : var(--reyhane-typography-h3-font-weight) var(--reyhane-typography-h3-font-size)/var(--reyhane-typography-h3-line-height) var(--reyhane-typography-h3-font-family);
+
+  --reyhane-typography-h4 : var(--reyhane-typography-h4-font-weight) var(--reyhane-typography-h4-font-size)/var(--reyhane-typography-h4-line-height) var(--reyhane-typography-h4-font-family);
+
+  --reyhane-typography-h5 : var(--reyhane-typography-h5-font-weight) var(--reyhane-typography-h5-font-size)/var(--reyhane-typography-h5-line-height) var(--reyhane-typography-h5-font-family);
+
+  --reyhane-typography-s1 : var(--reyhane-typography-s1-font-weight) var(--reyhane-typography-s1-font-size)/var(--reyhane-typography-s1-line-height) var(--reyhane-typography-s1-font-family);
+
+  --reyhane-typography-s2 : var(--reyhane-typography-s2-font-weight) var(--reyhane-typography-s2-font-size)/var(--reyhane-typography-s2-line-height) var(--reyhane-typography-s2-font-family);
+
+  --reyhane-typography-b1 : var(--reyhane-typography-b1-font-weight) var(--reyhane-typography-b1-font-size)/var(--reyhane-typography-b1-line-height) var(--reyhane-typography-b1-font-family);
+
+  --reyhane-typography-b2 : var(--reyhane-typography-b2-font-weight) var(--reyhane-typography-b2-font-size)/var(--reyhane-typography-b2-line-height) var(--reyhane-typography-b2-font-family);
+
+  --reyhane-typography-b3 : var(--reyhane-typography-b2-font-weight) var(--reyhane-typography-b3-font-size)/var(--reyhane-typography-b3-line-height) var(--reyhane-typography-b3-font-family);
+
+  --reyhane-typography-c1 : var(--reyhane-typography-c1-font-weight) var(--reyhane-typography-c1-font-size)/var(--reyhane-typography-c1-line-height) var(--reyhane-typography-c1-font-family);
+
+  --reyhane-typography-c2 : var(--reyhane-typography-c2-font-weight) var(--reyhane-typography-c2-font-size)/var(--reyhane-typography-c2-line-height) var(--reyhane-typography-c2-font-family);
+
+  --reyhane-typography-c3 : var(--reyhane-typography-c3-font-weight) var(--reyhane-typography-c3-font-size)/var(--reyhane-typography-c3-line-height) var(--reyhane-typography-c3-font-family);
+
+  --reyhane-typography-l1: var(--reyhane-typography-l1-font-weight) var(--reyhane-typography-l1-font-size)/var(--reyhane-typography-l1-line-height) var(--reyhane-typography-l1-font-family);
+
+  --reyhane-typography-button-large: var(--reyhane-typography-button-large-font-weight) var(--reyhane-typography-button-large-font-size)/var(--reyhane-typography-button-large-line-height) var(--reyhane-typography-button-large-font-family);
+
+  --reyhane-typography-button-medium: var(--reyhane-typography-button-medium-font-weight) var(--reyhane-typography-button-medium-font-size)/var(--reyhane-typography-button-medium-line-height) var(--reyhane-typography-button-medium-font-family);
+
+  --reyhane-typography-button-small: var(--reyhane-typography-button-small-font-weight) var(--reyhane-typography-button-small-font-size)/var(--reyhane-typography-button-small-line-height) var(--reyhane-typography-button-small-font-family);
+
+
+
+}

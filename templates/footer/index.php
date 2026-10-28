@@ -4,7 +4,6 @@
 
         <?php get_template_part('./templates/footer/section' , 'banner'); ?>
 
-
         <?php get_template_part('./templates/footer/section' , 'widget-area'); ?>
 
         <?php get_template_part('./templates/footer/section' , 'copyright-text'); ?>

@@ -73,11 +73,11 @@ class ServicesPostType
 
 
 
-    public static function get_all_services() {
+    public static function get_all_services($quantity = -1) {
 
         $args = array(
            'post_type'      => 'reyhane-services',
-           'posts_per_page' => -1,
+           'posts_per_page' => $quantity,
             'fields'         => 'ids',
         );
 
@@ -86,9 +86,9 @@ class ServicesPostType
     }
 
 
-    public static function get_all_services_with_data() {
+    public static function get_all_services_with_data($quantity = -1) {
 
-        $services = self::get_all_services();
+        $services = self::get_all_services($quantity);
 
         $result = array();
 
@@ -100,7 +100,7 @@ class ServicesPostType
 
             $result[$service]['thumbnail_url'] = get_the_post_thumbnail_url($service);
 
-            $result[$service]['sub_title'] = get_post_meta($service , 'service_subtitle');
+            $result[$service]['sub_title'] = get_post_meta($service , 'service_subtitle', true);
 
             if( empty( $result[$service]['sub_title'] ) ) {
 

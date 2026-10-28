@@ -1,0 +1,464 @@
+@use 'mixins';
+
+.page-template-authentication{
+
+  direction: rtl;
+
+  overflow: hidden;
+
+  .reyhane-authentication-container{
+
+    width: 100vw;
+
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    .reyhane-authentication-return-home-link {
+
+      position: absolute;
+
+      width: 30px;
+
+      height: 30px;
+
+      top: 25px;
+
+      right: 25px;
+
+      @include mixins.mobileResponsive{
+
+        top: 15px;
+
+        right: 15px;
+
+      }
+
+      svg{
+
+        width: 30px;
+
+        height: 30px;
+
+        path{
+
+          stroke : var(--reyhane-color-netural-600);
+
+        }
+
+      }
+
+    }
+
+    .reyhane-authentication-background{
+
+        position: absolute;
+
+        background-image: url('https://drreyhanejahromi.com/wp-content/uploads/2026/10/Rectangle-395057.png');
+
+      background-repeat: no-repeat;
+
+        background-size: cover;
+
+        width: 100%;
+
+        height: 100%;
+
+        top: 0;
+
+        left: 0;
+
+        z-index: -1;
+
+    }
+
+
+    .reyhane-authentication-form-container{
+
+      width: 792px;
+
+      height: 500px;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      background: var(--reyhane-color-netural-50);
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      @include mixins.mobileResponsive{
+
+        grid-template-columns: 1fr;
+
+        height: 100%;
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-radius: 0;
+
+
+      }
+
+
+
+
+      .reyhane-authentication-form-left-col{
+
+        background-image: url('https://drreyhanejahromi.com/wp-content/uploads/2026/10/32b25470c996ad6709597efe5192ba29582dcd90.png');
+
+        background-repeat: no-repeat;
+
+        background-size:cover;
+
+        background-position:center;
+
+        @include mixins.mobileResponsive{
+
+          display: none;
+
+
+        }
+
+      }
+
+
+      .reyhane-authentication-form-right-col{
+
+        padding:36px 32px 36px 32px;
+
+        position: relative;
+
+        @include mixins.mobileResponsive{
+
+          padding:0 32px;
+
+        }
+
+
+
+
+
+
+
+        .reyhane-authentication-form-section{
+
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: center;
+
+          .top-section{
+
+            display: flex;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            .top-icon{
+
+             width: 130px;
+
+              height: auto;
+
+            }
+
+          }
+
+
+          .change-phone-number-cta{
+
+            font:var(--reyhane-typography-b2);
+
+            color: var(--reyhane-color-primary-600);
+
+            margin-bottom: 0;
+
+            text-align: center;
+
+
+            margin-top: 8px;
+
+            cursor: pointer;
+
+          }
+
+
+          .main-title{
+
+            font:var(--reyhane-typography-s1);
+
+            color: var(--reyhane-color-netural-900);
+
+            margin-bottom: 6px;
+
+            text-align: center;
+
+          }
+
+          .sub-title{
+
+            font:var(--reyhane-typography-b2);
+
+            color: var(--reynahe-color-netural-600);
+
+            margin-bottom: 0;
+
+            text-align: center;
+
+          }
+
+
+
+          .content-section{
+
+            width: 100%;
+
+            margin-bottom: 35px;
+
+            margin-top: 35px;
+
+            .reyhane-authentication-input-phone-number {
+
+              text-align: right;
+
+              height: 42px;
+
+              border-radius: 12px;
+
+              border: none;
+
+              margin-bottom: 24px;
+
+              padding-right: 10px;
+
+              font: var(--reyhane-typography-b1);
+
+              background-color: var(--reyhane-color-netural-200);
+
+              color: var(--reyhane-color-netural-600);
+
+
+              &:focus{
+
+                outline: none;
+
+              }
+
+            }
+
+            .reyhane-authentication-submit-button{
+
+              width: 100%;
+
+              height: 42px;
+
+              display: flex;
+
+              gap: 10px;
+
+              align-items: center;
+
+              justify-content: center;
+
+              border-radius: 12px;
+
+              background: var(--reyhane-accent-color);
+
+              border: none;
+
+              font: var(--reyhane-typography-s1);
+
+              color: var(--reyhane-color-netural-50);
+
+
+              .button-title{
+
+                height: 100%;
+
+              }
+
+              .button-icon{
+
+                height: 100%;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+              }
+
+              &.doing-ajax{
+
+                opacity: 0.5;
+
+                pointer-events: none;
+
+              }
+
+            }
+
+
+
+
+
+
+
+            .reyhane-otp-input-container{
+
+              direction: ltr;
+
+              display: flex;
+
+              flex-direction: row;
+
+              gap: 8px;
+
+              align-items: center;
+
+              justify-content: center;
+
+              .otp-input-item{
+
+                height: 60px;
+
+                width: 60px;
+
+                text-align: center;
+
+                border-radius: 12px;
+
+                border : 1px solid var(--reyhane-color-netural-400);
+
+                color : var(--reyhane-color-netural-600);
+
+                font : var(--reyhane-typography-b1);
+
+                &:focus{
+
+                  outline: none;
+
+                 border : 1px solid var(--reyhane-color-primary-600);
+                }
+
+              }
+
+              margin-bottom: 24px;
+
+            }
+
+            .reyhane-otp-timer-container{
+
+              text-align: center;
+
+              color : var(--reyhane-color-netural-600);
+
+              font : var(--reyhane-typography-b2);
+
+              display: flex;
+
+              align-items: center;
+
+              gap: 5px;
+
+              justify-content: center;
+
+              margin-bottom: 24px;
+            }
+
+
+          }
+
+          .footer-section{
+
+            text-align: center;
+
+            font:var(--reyhane-typography-c1);
+
+            color: var(--reynahe-color-netural-600);
+
+          }
+
+
+          &.hidden-section{
+
+            display: none;
+
+          }
+
+          .reyhane-resend-otp-button {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-bottom: 24px;
+
+            gap: 10px;
+
+            .resend-otp-button-text{
+
+              color:var(--reyhane-color-netural-900);
+
+              font : var(--reyhane-typography-b2);
+
+              display: flex;
+
+              align-items: center;
+
+              cursor: pointer;
+
+            }
+
+            .resend-otp-button-icon{
+
+              display: flex;
+
+              align-items: center;
+
+            }
+
+            &.disabled{
+
+              pointer-events: none;
+
+              display: none;
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+}

@@ -1,72 +1,12 @@
-@font-face {
-  font-family: "Yekan Bakh";
-  src: url("../fonts/yekan-bakh-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  src: url("../fonts/yekan-bakh-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  src: url("../fonts/yekan-bakh-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  src: url("../fonts/yekan-bakh-heavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-:root {
-  --reyhane-container-width: 1240px;
-  --reyhane-accent-color: #5CC3E5;
-  --reyhane-yekan-bakh-font: 'Yekan Bakh';
-  --reyhane-typography-h1: 600 48px/58px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-h2: 600 40px/48px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-h3: 600 32px/38px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-h4: 600 28px/34px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-h5: 600 24px/28px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-s1: 600 18px/28px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-s2: 600 16px/24px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-b1: 300 16px/24px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-b2: 300 14px/20px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-b3: 400 14px/20px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-c1: 300 12px/16px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-c2: 400 12px/16px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-c3: 400 10px/14px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-label: 400 12px/16px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-button-large: 600 16px/20px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-button-medium: 600 14px/16px var(--reyhane-yekan-bakh-font);
-  --reyhane-typography-button-small: 600 12px/16px var(--reyhane-yekan-bakh-font);
-  --reyhane-netural-color-900: #263438;
-  --reyhane-netural-color-700: #617177;
-  --reyhane-color-netural-500: #B7C1C4;
-  --reyhane-color-netural-600: #89969A;
-  --reyhane-color-netural-300: #F5F9FA;
-  --reyhane-color-netural-200: #F1F3F9;
-  --reyhane-color-primary-600: #5CC3E5;
-  --reyhane-color-primary-700: #399BC0;
-  --reyhane-color-primary-200: #E5F7FD;
-  --reyhane-color-secondary-100: #F7FCF3;
-  --reyhane-color-secondary-600: #A1D084;
-  --reyhane-color-400: #D9E1E3;
-  --reyhane-color-50: #FFFFFF;
-}
-
 /* ==========================================
    Layout
 ========================================== */
+body {
+  background-color: #F1F1F1;
+}
+
 .reyhane-container {
-  max-width: var(--reyhane-container-width) !important;
+  max-width: calc(var(--reyhane-container-width) * 1px) !important;
   width: 100%;
 }
 
@@ -80,7 +20,7 @@
 }
 
 .reyhane-center-container {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .reyhane-flex {
@@ -195,6 +135,10 @@
   border-radius: 8px;
 }
 
+.page-header {
+  display: none !important;
+}
+
 /* ==========================================
    Colors
 ========================================== */
@@ -202,12 +146,12 @@
   color: var(--reyhane-accent-color);
 }
 
-.reyhane-color-50 {
-  color: var(--reyhane-color-50);
+.reyhane-color-netural-50 {
+  color: var(--reyhane-color-netural-50);
 }
 
 .reyhane-color-netural-700 {
-  color: var(--reyhane-netural-color-700);
+  color: var(--reyhane-color-netural-700);
 }
 
 .reyhane-color-netural-600 {
@@ -222,12 +166,12 @@
   color: var(--reyhane-color-netural-200);
 }
 
-.reyhane-netural-color-900 {
-  color: var(--reyhane-netural-color-900);
+.reyhane-color-netural-900 {
+  color: var(--reyhane-color-netural-900);
 }
 
-.reyhane-color-400 {
-  color: var(--reyhane-color-400);
+.reyhane-color-netural-400 {
+  color: var(--reyhane-color-netural-400);
 }
 
 .reyhane-color-primary-600 {
@@ -258,15 +202,15 @@
 }
 
 .reyhane-bg-color-50 {
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
 }
 
 .reyhane-bg-netural-color-900 {
-  background-color: var(--reyhane-netural-color-900);
+  background-color: var(--reyhane-color-netural-900);
 }
 
 .reyhane-bg-color-400 {
-  background-color: var(--reyhane-color-400);
+  background-color: var(--reyhane-color-netural-400);
 }
 
 .reyhane-bg-color-primary-600 {
@@ -280,143 +224,55 @@
 /* ==========================================
    Typography
 ========================================== */
-.reyhane-font-yekan-bakh {
-  font-family: var(--reyhane-yekan-bakh-font) !important;
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-
-body {
-  background-color: #F1F1F1;
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-
-body.rtl, html[dir=rtl] {
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --reyhane-yekan-bakh-font: 'Yekan Bakh';
   --e-global-typography-primary-font-family: var(--reyhane-yekan-bakh-font);
   --e-global-typography-text-font-family: var(--reyhane-yekan-bakh-font);
-}
-
-.reyhane-h1 p, .reyhane-h1 h1, .reyhane-h1 h2, .reyhane-h1 h3, .reyhane-h1 h4, .reyhane-h1 h5, .reyhane-h1 a {
-  font: var(--reyhane-typography-h1);
-}
-.reyhane-h1 {
-  font: var(--reyhane-typography-h1);
-}
-
-.reyhane-h2 p, .reyhane-h2 h1, .reyhane-h2 h2, .reyhane-h2 h3, .reyhane-h2 h4, .reyhane-h2 h5, .reyhane-h2 a {
-  font: var(--reyhane-typography-h2);
-}
-.reyhane-h2 {
-  font: var(--reyhane-typography-h2);
-}
-
-.reyhane-h3 p, .reyhane-h3 h1, .reyhane-h3 h2, .reyhane-h3 h3, .reyhane-h3 h4, .reyhane-h3 h5, .reyhane-h3 a {
-  font: var(--reyhane-typography-h3);
-}
-.reyhane-h3 {
-  font: var(--reyhane-typography-h3);
-}
-
-.reyhane-h4 p, .reyhane-h4 h1, .reyhane-h4 h2, .reyhane-h4 h3, .reyhane-h4 h4, .reyhane-h4 h5, .reyhane-h4 a {
-  font: var(--reyhane-typography-h4);
-}
-.reyhane-h4 {
-  font: var(--reyhane-typography-h4);
-}
-
-.reyhane-typography-s1 p, .reyhane-typography-s1 h1, .reyhane-typography-s1 h2, .reyhane-typography-s1 h3, .reyhane-typography-s1 h4, .reyhane-typography-s1 h5, .reyhane-typography-s1 a {
-  font: var(--reyhane-typography-s2);
-}
-.reyhane-typography-s1 {
-  font: var(--reyhane-typography-s2);
-}
-
-.reyhane-typography-s2 p, .reyhane-typography-s2 h1, .reyhane-typography-s2 h2, .reyhane-typography-s2 h3, .reyhane-typography-s2 h4, .reyhane-typography-s2 h5, .reyhane-typography-s2 a {
-  font: var(--reyhane-typography-s2);
-}
-.reyhane-typography-s2 {
-  font: var(--reyhane-typography-s2);
-}
-
-.reyhane-typography-b1 p, .reyhane-typography-b1 h1, .reyhane-typography-b1 h2, .reyhane-typography-b1 h3, .reyhane-typography-b1 h4, .reyhane-typography-b1 h5, .reyhane-typography-b1 a {
-  font: var(--reyhane-typography-b1);
-}
-.reyhane-typography-b1 {
-  font: var(--reyhane-typography-b1);
-}
-
-.reyhane-typography-b2 p, .reyhane-typography-b2 h1, .reyhane-typography-b2 h2, .reyhane-typography-b2 h3, .reyhane-typography-b2 h4, .reyhane-typography-b2 h5, .reyhane-typography-b2 a {
-  font: var(--reyhane-typography-b2);
-}
-.reyhane-typography-b2 {
-  font: var(--reyhane-typography-b2);
-}
-
-.reyhane-typography-b3 p, .reyhane-typography-b3 h1, .reyhane-typography-b3 h2, .reyhane-typography-b3 h3, .reyhane-typography-b3 h4, .reyhane-typography-b3 h5, .reyhane-typography-b3 a {
-  font: var(--reyhane-typography-b3);
-}
-.reyhane-typography-b3 {
-  font: var(--reyhane-typography-b3);
-}
-
-.reyhane-typography-c1 p, .reyhane-typography-c1 h1, .reyhane-typography-c1 h2, .reyhane-typography-c1 h3, .reyhane-typography-c1 h4, .reyhane-typography-c1 h5, .reyhane-typography-c1 a {
-  font: var(--reyhane-typography-c1);
-}
-.reyhane-typography-c1 {
-  font: var(--reyhane-typography-c1);
-}
-
-.reyhane-typography-c2 p, .reyhane-typography-c2 h1, .reyhane-typography-c2 h2, .reyhane-typography-c2 h3, .reyhane-typography-c2 h4, .reyhane-typography-c2 h5, .reyhane-typography-c2 a {
-  font: var(--reyhane-typography-c2);
-}
-.reyhane-typography-c2 {
-  font: var(--reyhane-typography-c2);
-}
-
-.reyhane-typography-c3 p, .reyhane-typography-c3 h1, .reyhane-typography-c3 h2, .reyhane-typography-c3 h3, .reyhane-typography-c3 h4, .reyhane-typography-c3 h5, .reyhane-typography-c3 a {
-  font: var(--reyhane-typography-b3);
-}
-.reyhane-typography-c3 {
-  font: var(--reyhane-typography-c3);
-}
-
-.reyhane-typography-body-large p, .reyhane-typography-body-large h1, .reyhane-typography-body-large h2, .reyhane-typography-body-large h3, .reyhane-typography-body-large h4, .reyhane-typography-body-large h5, .reyhane-typography-body-large a {
-  font: var(--reyhane-typography-body-large);
-}
-.reyhane-typography-body-large {
-  font: var(--reyhane-typography-body-large);
-}
-
-.reyhane-typography-body-medium p, .reyhane-typography-body-medium h1, .reyhane-typography-body-medium h2, .reyhane-typography-body-medium h3, .reyhane-typography-body-medium h4, .reyhane-typography-body-medium h5, .reyhane-typography-body-medium a {
-  font: var(--reyhane-typography-body-medium);
-}
-.reyhane-typography-body-medium {
-  font: var(--reyhane-typography-body-medium);
-}
-
-.reyhane-typography-body-small p, .reyhane-typography-body-small h1, .reyhane-typography-body-small h2, .reyhane-typography-body-small h3, .reyhane-typography-body-small h4, .reyhane-typography-body-small h5, .reyhane-typography-body-small a {
-  font: var(--reyhane-typography-body-small);
-}
-.reyhane-typography-body-small {
-  font: var(--reyhane-typography-body-small);
-}
-
-.reyhane-typography-button-large p, .reyhane-typography-button-large h1, .reyhane-typography-button-large h2, .reyhane-typography-button-large h3, .reyhane-typography-button-large h4, .reyhane-typography-button-large h5, .reyhane-typography-button-large a {
-  font: var(--reyhane-typography-button-large);
-}
-.reyhane-typography-button-large {
-  font: var(--reyhane-typography-button-large);
-}
-
-.reyhane-typography-button-medium p, .reyhane-typography-button-medium h1, .reyhane-typography-button-medium h2, .reyhane-typography-button-medium h3, .reyhane-typography-button-medium h4, .reyhane-typography-button-medium h5, .reyhane-typography-button-medium a {
-  font: var(--reyhane-typography-button-medium);
-}
-.reyhane-typography-button-medium {
-  font: var(--reyhane-typography-button-medium);
-}
-
-.reyhane-typography-button-small p, .reyhane-typography-button-small h1, .reyhane-typography-button-small h2, .reyhane-typography-button-small h3, .reyhane-typography-button-small h4, .reyhane-typography-button-small h5, .reyhane-typography-button-small a {
-  font: var(--reyhane-typography-button-small);
-}
-.reyhane-typography-button-small {
-  font: var(--reyhane-typography-button-small);
+  --reyhane-typography-h1: var(--reyhane-typography-h1-font-weight) var(--reyhane-typography-h1-font-size)/var(--reyhane-typography-h1-line-height) var(--reyhane-typography-h1-font-family);
+  --reyhane-typography-h2: var(--reyhane-typography-h2-font-weight) var(--reyhane-typography-h2-font-size)/var(--reyhane-typography-h2-line-height) var(--reyhane-typography-h2-font-family);
+  --reyhane-typography-h3: var(--reyhane-typography-h3-font-weight) var(--reyhane-typography-h3-font-size)/var(--reyhane-typography-h3-line-height) var(--reyhane-typography-h3-font-family);
+  --reyhane-typography-h4: var(--reyhane-typography-h4-font-weight) var(--reyhane-typography-h4-font-size)/var(--reyhane-typography-h4-line-height) var(--reyhane-typography-h4-font-family);
+  --reyhane-typography-h5: var(--reyhane-typography-h5-font-weight) var(--reyhane-typography-h5-font-size)/var(--reyhane-typography-h5-line-height) var(--reyhane-typography-h5-font-family);
+  --reyhane-typography-s1: var(--reyhane-typography-s1-font-weight) var(--reyhane-typography-s1-font-size)/var(--reyhane-typography-s1-line-height) var(--reyhane-typography-s1-font-family);
+  --reyhane-typography-s2: var(--reyhane-typography-s2-font-weight) var(--reyhane-typography-s2-font-size)/var(--reyhane-typography-s2-line-height) var(--reyhane-typography-s2-font-family);
+  --reyhane-typography-b1: var(--reyhane-typography-b1-font-weight) var(--reyhane-typography-b1-font-size)/var(--reyhane-typography-b1-line-height) var(--reyhane-typography-b1-font-family);
+  --reyhane-typography-b2: var(--reyhane-typography-b2-font-weight) var(--reyhane-typography-b2-font-size)/var(--reyhane-typography-b2-line-height) var(--reyhane-typography-b2-font-family);
+  --reyhane-typography-b3: var(--reyhane-typography-b2-font-weight) var(--reyhane-typography-b3-font-size)/var(--reyhane-typography-b3-line-height) var(--reyhane-typography-b3-font-family);
+  --reyhane-typography-c1: var(--reyhane-typography-c1-font-weight) var(--reyhane-typography-c1-font-size)/var(--reyhane-typography-c1-line-height) var(--reyhane-typography-c1-font-family);
+  --reyhane-typography-c2: var(--reyhane-typography-c2-font-weight) var(--reyhane-typography-c2-font-size)/var(--reyhane-typography-c2-line-height) var(--reyhane-typography-c2-font-family);
+  --reyhane-typography-c3: var(--reyhane-typography-c3-font-weight) var(--reyhane-typography-c3-font-size)/var(--reyhane-typography-c3-line-height) var(--reyhane-typography-c3-font-family);
+  --reyhane-typography-l1: var(--reyhane-typography-l1-font-weight) var(--reyhane-typography-l1-font-size)/var(--reyhane-typography-l1-line-height) var(--reyhane-typography-l1-font-family);
+  --reyhane-typography-button-large: var(--reyhane-typography-button-large-font-weight) var(--reyhane-typography-button-large-font-size)/var(--reyhane-typography-button-large-line-height) var(--reyhane-typography-button-large-font-family);
+  --reyhane-typography-button-medium: var(--reyhane-typography-button-medium-font-weight) var(--reyhane-typography-button-medium-font-size)/var(--reyhane-typography-button-medium-line-height) var(--reyhane-typography-button-medium-font-family);
+  --reyhane-typography-button-small: var(--reyhane-typography-button-small-font-weight) var(--reyhane-typography-button-small-font-size)/var(--reyhane-typography-button-small-line-height) var(--reyhane-typography-button-small-font-family);
 }
 
 /* ==========================================
@@ -474,11 +330,11 @@ body.rtl, html[dir=rtl] {
 }
 
 .reyhane-button-primary {
-  color: var(--reyhane-color-50);
+  color: var(--reyhane-color-netural-50);
   background-color: var(--reyhane-color-primary-600);
 }
 .reyhane-button-primary:hover {
-  color: var(--reyhane-color-50);
+  color: var(--reyhane-color-netural-50);
   background-color: var(--reyhane-color-primary-700);
 }
 .reyhane-button-primary.disabled {
@@ -495,7 +351,7 @@ body.rtl, html[dir=rtl] {
   display: grid;
   grid-template-columns: 215px 1fr 132px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -518,6 +374,23 @@ body.rtl, html[dir=rtl] {
     display: flex;
   }
 }
+.reyhane-header .reyhane-user-login-header-cta {
+  font: var(--reyhane-typography-s2);
+}
+.reyhane-header .reyhane-user-login-header-cta.logged-in {
+  background-color: var(--reyhane-color-primary-300);
+  color: var(--reyhane-color-primary-600);
+}
+.reyhane-header .reyhane-user-login-header-cta.logged-in:hover {
+  background-color: var(--reyhane-color-primary-300);
+}
+.reyhane-header .reyhane-user-login-header-cta.guest {
+  background-color: var(--reyhane-color-primary-600);
+  color: var(--reyhane-color-netural-50);
+}
+.reyhane-header .reyhane-user-login-header-cta.guest:hover {
+  background-color: var(--reyhane-color-primary-700);
+}
 .reyhane-header .reyhane-header-logo-text {
   margin-bottom: 0;
   font: var(--reyhane-typography-b1);
@@ -536,8 +409,8 @@ body.rtl, html[dir=rtl] {
   padding-left: 24px;
   padding-right: 24px;
   text-align: center;
-  border-left: 1px solid var(--reyhane-color-400);
-  border-right: 1px solid var(--reyhane-color-400);
+  border-left: 1px solid var(--reyhane-color-netural-400);
+  border-right: 1px solid var(--reyhane-color-netural-400);
 }
 .reyhane-header .reyhane-header-menu-wrapper ul li:first-child {
   border-right: none;
@@ -548,7 +421,11 @@ body.rtl, html[dir=rtl] {
 .reyhane-header .reyhane-header-menu-wrapper ul li a {
   text-decoration: none;
   font: var(--reyhane-typography-b1);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
+}
+.reyhane-header .reyhane-header-logo-wrapper {
+  font: var(--reyhane-typography-c2);
+  color: var(--reyhane-color-netural-900);
 }
 .reyhane-header .reyhane-header-logo-wrapper .reyhane-header-logo-image {
   width: 45px;
@@ -571,19 +448,114 @@ body.rtl, html[dir=rtl] {
     border-radius: 12px;
   }
 }
-.reyhane-header .reyhane-responsive-menu-container {
+.reyhane-header .reyhane-responsive-menu-icon-container {
   display: none;
 }
 @media (max-width: 576px) {
-  .reyhane-header .reyhane-responsive-menu-container {
+  .reyhane-header .reyhane-responsive-menu-icon-container {
     display: block;
     margin-right: 16px;
   }
 }
-.reyhane-header .reyhane-responsive-menu-container .reyhane-responsive-menu-icon {
+.reyhane-header .reyhane-responsive-menu-icon-container .reyhane-responsive-menu-icon {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.reyhane-responsive-menu-container {
+  display: none;
+  background: var(--reyhane-color-netural-50);
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 340px;
+  padding: 30px 20px;
+}
+@media (max-width: 576px) {
+  .reyhane-responsive-menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.reyhane-responsive-menu-container {
+  transition: right linear 0.3s;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section {
+  display: flex;
+  flex-direction: row;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section .reyhane-responsive-menu-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section .reyhane-responsive-menu-logo .custom-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section .reyhane-responsive-menu-logo .custom-logo-link img.custom-logo {
+  max-width: 40px;
+  margin-left: 8px;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section .reyhane-responsive-menu-logo .reyhane-responsive-logo-text {
+  font: var(--reyhane-typography-c2);
+  color: var(--reyhane-color-netural-900);
+  max-width: 80px;
+  margin-bottom: 0;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-top-section .reyhane-responsive-menu-close-button {
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section {
+  margin-top: 20px;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+  padding: 16px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li a {
+  font: inherit;
+  color: inherit;
+  display: flex;
+  gap: 10px;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li a img {
+  width: 20px;
+  height: auto;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li .reyhane-responsive-menu-item-arrow {
+  height: 100%;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li .reyhane-responsive-menu-item-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+.reyhane-responsive-menu-container .reyhane-responsive-menu-bottom-section ul li.current-menu-item {
+  background-color: var(--reyhane-color-primary-100);
+}
+.reyhane-responsive-menu-container.hidden {
+  right: -340px;
 }
 
 /* ==========================================
@@ -610,11 +582,17 @@ footer .reyhane-widget-wrapper {
   }
 }
 footer .reyhane-widget-wrapper .reyhane-widget-column {
-  border-right: 1px dashed var(--reyhane-color-400);
+  border-right: 1px dashed var(--reyhane-color-netural-400);
   padding-right: 25px;
 }
 footer .reyhane-widget-wrapper .reyhane-widget-column:first-child, footer .reyhane-widget-wrapper .reyhane-widget-column:last-child {
   border: none;
+}
+footer .reyhane-widget-wrapper .reyhane-widget-column {
+  padding-top: 52px;
+}
+footer .reyhane-widget-wrapper .reyhane-widget-column:first-child {
+  padding-top: 0;
 }
 @media (max-width: 576px) {
   footer .reyhane-widget-wrapper .reyhane-widget-column {
@@ -686,7 +664,7 @@ footer .reyhane-footer-banner .reyhane-footer-banner-wrapper {
   footer .reyhane-footer-banner .reyhane-footer-banner-wrapper {
     max-width: 90%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px 20px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -711,19 +689,28 @@ footer .reyhane-footer-banner .reyhane-footer-banner-wrapper * {
 footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-banner-main-title {
   margin-bottom: 10px;
 }
+@media (max-width: 576px) {
+  footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-banner-main-title {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-banner-sub-title {
+    text-align: center;
+  }
+}
 footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-banner-icon {
   margin-bottom: 15px;
 }
-@media (max-width: 576px) {
-  footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-banner-buttons-container {
-    flex-direction: column;
-  }
+footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-make-appointment-double-button {
+  margin-top: 20px;
 }
 
 /* ==========================================
    FAQ
 ========================================== */
 .reyhane-faq-container {
+  max-width: 790px !important;
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -732,8 +719,9 @@ footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-ban
   flex-direction: column;
 }
 .reyhane-faq-container .reyhane-faq-item {
+  direction: rtl;
   position: relative;
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
   border-radius: 12px;
   padding: 24px 16px;
   overflow: hidden;
@@ -748,7 +736,7 @@ footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-ban
   -moz-user-select: none;
   user-select: none;
   font: var(--reyhane-typography-s2);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
   margin-bottom: 0;
 }
 @media (max-width: 576px) {
@@ -790,13 +778,742 @@ footer .reyhane-footer-banner .reyhane-footer-banner-wrapper .reyhane-footer-ban
 .reyhane-faq-container .reyhane-faq-item.active .reyhane-faq-icon {
   top: 40px;
   background-color: var(--reyhane-accent-color);
-  color: var(--reyhane-color-50);
+  color: var(--reyhane-color-netural-50);
 }
 .reyhane-faq-container .reyhane-faq-item.active .reyhane-faq-icon .minus {
   display: block;
 }
 .reyhane-faq-container .reyhane-faq-item.active .reyhane-faq-icon .plus {
   display: none;
+}
+
+/* ==========================================
+   Make Appointment Double Button
+========================================== */
+.reyhane-make-appointment-double-button {
+  display: flex;
+  gap: 14px;
+}
+.reyhane-make-appointment-double-button .make-appointment {
+  background: var(--reyhane-accent-color);
+}
+.reyhane-make-appointment-double-button .make-appointment .reyhane-button-text {
+  color: var(--reyhane-color-netural-50);
+}
+.reyhane-make-appointment-double-button .make-appointment {
+  transition: background-color linear 0.1s;
+}
+.reyhane-make-appointment-double-button .make-appointment:hover {
+  background-color: var(--reyhane-color-primary-700);
+}
+.reyhane-make-appointment-double-button .get-consultant {
+  background: var(--reyhane-color-secondary-600);
+}
+.reyhane-make-appointment-double-button .get-consultant .reyhane-button-text {
+  color: var(--reyhane-color-netural-50);
+}
+.reyhane-make-appointment-double-button .get-consultant {
+  transition: background-color linear 0.1s;
+}
+.reyhane-make-appointment-double-button .get-consultant:hover {
+  background-color: var(--reyhane-color-secondary-700);
+}
+.reyhane-make-appointment-double-button.footer-double-button .make-appointment {
+  background: var(--reyhane-color-netural-50);
+}
+.reyhane-make-appointment-double-button.footer-double-button .make-appointment .reyhane-button-text {
+  color: var(--reyhane-accent-color);
+}
+.reyhane-make-appointment-double-button.footer-double-button .make-appointment .reyhane-button-icon svg path {
+  stroke: var(--reyhane-accent-color);
+}
+
+/* ==========================================
+   Authentication
+========================================== */
+.page-template-authentication {
+  direction: rtl;
+  overflow: hidden;
+}
+.page-template-authentication .reyhane-authentication-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-return-home-link {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 25px;
+}
+@media (max-width: 576px) {
+  .page-template-authentication .reyhane-authentication-container .reyhane-authentication-return-home-link {
+    top: 15px;
+    right: 15px;
+  }
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-return-home-link svg {
+  width: 30px;
+  height: 30px;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-return-home-link svg path {
+  stroke: var(--reyhane-color-netural-600);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-background {
+  position: absolute;
+  background-image: url("https://drreyhanejahromi.com/wp-content/uploads/2026/10/Rectangle-395057.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container {
+  width: 792px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--reyhane-color-netural-50);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 576px) {
+  .page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+  }
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-left-col {
+  background-image: url("https://drreyhanejahromi.com/wp-content/uploads/2026/10/32b25470c996ad6709597efe5192ba29582dcd90.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 576px) {
+  .page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-left-col {
+    display: none;
+  }
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col {
+  padding: 36px 32px 36px 32px;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col {
+    padding: 0 32px;
+  }
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .top-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .top-section .top-icon {
+  width: 130px;
+  height: auto;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .change-phone-number-cta {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-primary-600);
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .main-title {
+  font: var(--reyhane-typography-s1);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 6px;
+  text-align: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .sub-title {
+  font: var(--reyhane-typography-b2);
+  color: var(--reynahe-color-netural-600);
+  margin-bottom: 0;
+  text-align: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section {
+  width: 100%;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-input-phone-number {
+  text-align: right;
+  height: 42px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 24px;
+  padding-right: 10px;
+  font: var(--reyhane-typography-b1);
+  background-color: var(--reyhane-color-netural-200);
+  color: var(--reyhane-color-netural-600);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-input-phone-number:focus {
+  outline: none;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-submit-button {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--reyhane-accent-color);
+  border: none;
+  font: var(--reyhane-typography-s1);
+  color: var(--reyhane-color-netural-50);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-submit-button .button-title {
+  height: 100%;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-submit-button .button-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-authentication-submit-button.doing-ajax {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-otp-input-container {
+  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-otp-input-container .otp-input-item {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid var(--reyhane-color-netural-400);
+  color: var(--reyhane-color-netural-600);
+  font: var(--reyhane-typography-b1);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-otp-input-container .otp-input-item:focus {
+  outline: none;
+  border: 1px solid var(--reyhane-color-primary-600);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-otp-input-container {
+  margin-bottom: 24px;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .content-section .reyhane-otp-timer-container {
+  text-align: center;
+  color: var(--reyhane-color-netural-600);
+  font: var(--reyhane-typography-b2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .footer-section {
+  text-align: center;
+  font: var(--reyhane-typography-c1);
+  color: var(--reynahe-color-netural-600);
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section.hidden-section {
+  display: none;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .reyhane-resend-otp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 10px;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .reyhane-resend-otp-button .resend-otp-button-text {
+  color: var(--reyhane-color-netural-900);
+  font: var(--reyhane-typography-b2);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .reyhane-resend-otp-button .resend-otp-button-icon {
+  display: flex;
+  align-items: center;
+}
+.page-template-authentication .reyhane-authentication-container .reyhane-authentication-form-container .reyhane-authentication-form-right-col .reyhane-authentication-form-section .reyhane-resend-otp-button.disabled {
+  pointer-events: none;
+  display: none;
+}
+
+/* ==========================================
+   Authentication
+========================================== */
+.wpcf7[data-wpcf7-id="233"] {
+  width: 100%;
+  max-width: 670px;
+  background-color: var(--reyhane-color-netural-50);
+  padding: 48px 64px;
+  border-radius: 16px;
+  direction: rtl;
+}
+@media (max-width: 576px) {
+  .wpcf7[data-wpcf7-id="233"] {
+    padding: 32px 16px;
+  }
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-split-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-split-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-full-row input, .wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-full-row label {
+  width: 100%;
+}
+.wpcf7[data-wpcf7-id="233"] label {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+}
+@media (max-width: 576px) {
+  .wpcf7[data-wpcf7-id="233"] label {
+    margin-bottom: 24px;
+  }
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-text, .wpcf7[data-wpcf7-id="233"] .wpcf7-tel {
+  margin-top: 8px;
+  height: 48px;
+  padding-right: 12px;
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+  border-radius: 12px;
+  border: 1px solid var(--reyhane-color-netural-200);
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-text:focus, .wpcf7[data-wpcf7-id="233"] .wpcf7-tel:focus {
+  outline: none;
+  border: 1px solid var(--reyhane-accent-color);
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-textarea {
+  margin-top: 8px;
+  border-radius: 12px;
+  max-height: 120px;
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+  border: 1px solid var(--reyhane-color-netural-200);
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-textarea:focus {
+  outline: none;
+  border: 1px solid var(--reyhane-accent-color);
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-submit-container {
+  position: relative;
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-submit-container > p {
+  margin-bottom: 0;
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-submit-container .wpcf7-submit {
+  width: 100%;
+  border-radius: 12px;
+  background-color: var(--reyhane-accent-color);
+  color: var(--reyhane-color-netural-50);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font: var(--reyhane-typography-s1);
+  transition: background-color linear 0.1s;
+}
+.wpcf7[data-wpcf7-id="233"] .reyhane-contact-form-submit-container .wpcf7-submit:hover {
+  background-color: var(--reyhane-color-primary-700);
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-not-valid-tip {
+  margin-top: 10px;
+  font: var(--reyhane-typography-b2);
+}
+.wpcf7[data-wpcf7-id="233"] .wpcf7-response-output {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+  border: none !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.wpcf7[data-wpcf7-id="233"] form.submitting .reyhane-contact-form-submit-container > p {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* ==========================================
+   Global Top Banner
+========================================== */
+body.reyhane-have-global-top-banner {
+  padding-top: 55px;
+}
+body.reyhane-have-global-top-banner .reyhane-header {
+  top: 70px;
+}
+body.reyhane-have-global-top-banner .reyhane-global-top-banner {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  top: 0;
+  position: absolute;
+  z-index: 10000;
+}
+body.reyhane-have-global-top-banner .reyhane-global-top-banner .reyhane-global-top-banner-title {
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-50);
+  margin-bottom: 0;
+}
+body.reyhane-have-global-top-banner .reyhane-global-top-banner .reyhane-global-top-banner-cta {
+  font: var(--reyhane-typography-c2);
+  background-color: var(--reyhane-color-netural-50);
+  color: var(--reyhane-accent-color);
+}
+
+/* ==========================================
+   Widgets
+========================================== */
+.widget_reyhane_show_categories {
+  direction: rtl;
+}
+.widget_reyhane_show_categories .reyhane-widget-title {
+  font: var(--reyhane-typography-s1);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 16px;
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item {
+  height: 46px;
+  width: 100%;
+  max-width: 235px;
+  display: flex;
+  align-items: center;
+  border: 0;
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item .reyhane-show-categories-item-icon {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item .reyhane-show-categories-item-icon svg {
+  width: 16px;
+  height: 16px;
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item .reyhane-show-categories-item-title {
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-700);
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item:hover .reyhane-show-categories-item-title {
+  color: var(--reyhane-accent-color);
+}
+.widget_reyhane_show_categories .reyhane-show-categories-item:hover .reyhane-show-categories-item-icon svg path {
+  stroke: var(--reyhane-accent-color);
+}
+
+/* ==========================================
+   Toast Message
+========================================== */
+.jq-toast-wrap {
+  width: 280px !important;
+}
+.jq-toast-wrap .jq-toast-single {
+  direction: rtl;
+  text-align: right !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  padding: 20px 35px !important;
+  background-color: var(--reyhane-color-success-900) !important;
+}
+.jq-toast-wrap .jq-toast-single .jq-toast-heading {
+  font: var(--reyhane-typography-b1) !important;
+  color: var(--reyhane-color-netural-50) !important;
+}
+.jq-toast-wrap .jq-toast-single p {
+  font: var(--reyhane-typography-b2) !important;
+  color: var(--reyhane-color-netural-50) !important;
+}
+.jq-toast-wrap .jq-toast-single .jq-toast-loader {
+  top: 0;
+  background-color: var(--reyhane-accent-color) !important;
+}
+.jq-toast-wrap .jq-toast-single.jq-icon-error {
+  background-color: var(--reyhane-color-error-900) !important;
+}
+.jq-toast-wrap .jq-toast-single.jq-icon-error .jq-toast-heading {
+  color: var(--reyhane-color-netural-50) !important;
+}
+.jq-toast-wrap .jq-toast-single.jq-icon-error p {
+  color: var(--reyhane-color-netural-50) !important;
+}
+
+/* ==========================================
+   Blog
+========================================== */
+/* ==========================================
+   Grid Blog Item
+========================================== */
+.reyhane-blog-grid-item {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid var(--reyhane-color-primary-300);
+}
+@media (max-width: 576px) {
+  .reyhane-blog-grid-item {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-thumbnail-container {
+  margin-bottom: 14px;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 170px;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-thumbnail-container img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data {
+  display: flex;
+  flex-direction: column;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data .reyhane-blog-grid-item-date {
+  font: var(--reyhane-typography-c1);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 8px;
+  word-spacing: 5px;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data .reyhane-blog-grid-item-title {
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 8px;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data .reyhane-blog-grid-item-excerpt {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 14px;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data .reyhane-blog-grid-item-cta {
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--reyhane-accent-color);
+  color: var(--reyhane-color-netural-50);
+  font: var(--reyhane-typography-c2);
+  width: 110px;
+  height: 32px;
+  transition: background-color linear 0.1s;
+}
+.reyhane-blog-grid-item .reyhane-blog-grid-item-meta-data .reyhane-blog-grid-item-cta:hover {
+  background-color: var(--reyhane-color-primary-700);
+}
+
+/* ==========================================
+   Single Post
+========================================== */
+.single-post .reyhane-blog-main-container {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  gap: 25px;
+  margin-top: 130px !important;
+  margin-bottom: 130px !important;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container {
+    grid-template-columns: 1fr;
+    max-width: 90% !important;
+    margin-top: 30px !important;
+  }
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content {
+  background: var(--reyhane-color-netural-50);
+  padding: 32px;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-content {
+    padding: 20px;
+  }
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content {
+  border-radius: 12px;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-title {
+  font: var(--reyhane-typography-h3);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 16px;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta {
+  display: flex;
+  gap: 10px;
+  font: var(--reyhane-typography-c1);
+  word-spacing: 2px;
+  margin-bottom: 32px;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    word-spacing: 0;
+  }
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta .meta-separator {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta .reyhane-blog-meta-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta .reyhane-blog-meta-item .meta-title {
+  color: var(--reyhane-color-netural-700);
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta .reyhane-blog-meta-item .meta-value {
+  color: var(--reyhane-color-netural-900);
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .reyhane-blog-meta .reyhane-blog-meta-item .meta-value a {
+  font: inherit;
+  color: inherit;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .blog-main-image img {
+  border-radius: 12px;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-content .blog-main-image {
+  margin-bottom: 32px;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-related-posts {
+  background: var(--reyhane-color-netural-50);
+  padding: 32px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-related-posts {
+    padding: 20px;
+  }
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-related-posts .reyhane-related-post-main-title {
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 24px;
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-related-posts .reyhane-blog-related-posts-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-related-posts .reyhane-blog-related-posts-items-container {
+    grid-template-columns: 1fr;
+  }
+}
+.single-post .reyhane-blog-main-container .reyhane-blog-sidebar {
+  background: var(--reyhane-color-netural-50);
+  padding: 24px;
+  border-radius: 12px;
+  max-height: fit-content;
+}
+@media (max-width: 576px) {
+  .single-post .reyhane-blog-main-container .reyhane-blog-sidebar {
+    display: none;
+  }
+}
+
+/* ==========================================
+   Archive Page
+========================================== */
+.archive.post, .archive.category, .archive.tag, .blog {
+  direction: rtl;
+}
+.archive.post .reyhane-archive-title-section, .archive.category .reyhane-archive-title-section, .archive.tag .reyhane-archive-title-section, .blog .reyhane-archive-title-section {
+  margin-top: 130px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 45px !important;
+}
+@media (max-width: 576px) {
+  .archive.post .reyhane-archive-title-section, .archive.category .reyhane-archive-title-section, .archive.tag .reyhane-archive-title-section, .blog .reyhane-archive-title-section {
+    max-width: 90% !important;
+    margin-top: 30px !important;
+  }
+}
+.archive.post .reyhane-archive-title-section h1, .archive.category .reyhane-archive-title-section h1, .archive.tag .reyhane-archive-title-section h1, .blog .reyhane-archive-title-section h1 {
+  font: var(--reyhane-typography-h2);
+  color: var(--reyhanoe-color-netural-900);
+  text-align: center;
+  margin-bottom: 14px;
+}
+@media (max-width: 576px) {
+  .archive.post .reyhane-archive-title-section h1, .archive.category .reyhane-archive-title-section h1, .archive.tag .reyhane-archive-title-section h1, .blog .reyhane-archive-title-section h1 {
+    font: var(--reyhane-typography-h3);
+  }
+}
+.archive.post .reyhane-archive-title-section p, .archive.category .reyhane-archive-title-section p, .archive.tag .reyhane-archive-title-section p, .blog .reyhane-archive-title-section p {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhanoe-color-netural-700);
+  text-align: center;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .archive.post .reyhane-archive-title-section p, .archive.category .reyhane-archive-title-section p, .archive.tag .reyhane-archive-title-section p, .blog .reyhane-archive-title-section p {
+    max-width: 250px !important;
+  }
+}
+.archive.post .reyhane-archive-items-container, .archive.category .reyhane-archive-items-container, .archive.tag .reyhane-archive-items-container, .blog .reyhane-archive-items-container {
+  padding: 48px;
+  background-color: var(--reyhane-color-netural-50);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 12px;
+  margin-bottom: 80px !important;
+}
+.archive.post .reyhane-archive-items-container.no-post-found, .archive.category .reyhane-archive-items-container.no-post-found, .archive.tag .reyhane-archive-items-container.no-post-found, .blog .reyhane-archive-items-container.no-post-found {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 576px) {
+  .archive.post .reyhane-archive-items-container, .archive.category .reyhane-archive-items-container, .archive.tag .reyhane-archive-items-container, .blog .reyhane-archive-items-container {
+    grid-template-columns: 1fr;
+    max-width: 90% !important;
+  }
+}
+.archive.post .reyhane-archive-items-container .no-post-found, .archive.category .reyhane-archive-items-container .no-post-found, .archive.tag .reyhane-archive-items-container .no-post-found, .blog .reyhane-archive-items-container .no-post-found {
+  font: var(--reyhane-typography-h4);
+  color: var(--reyhanoe-color-netural-900);
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

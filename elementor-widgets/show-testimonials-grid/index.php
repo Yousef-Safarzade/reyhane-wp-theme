@@ -137,9 +137,9 @@ class reyhane_show_testimonials_grid extends \Elementor\Widget_Base {
 
                                     <div class="reyhane-show-services-grid-item-author-info">
 
-                                        <p class="reyhane-show-services-grid-item-author-name"> <?php echo $testimonial['author'] ?> </p>
+                                        <p class="reyhane-show-services-grid-item-author-name"><?php echo $testimonial['author'] ?></p>
 
-                                        <p class="reyhane-show-services-grid-item-author-date"> <?php echo $testimonial['date'] ?>1404</p>
+                                        <p class="reyhane-show-services-grid-item-author-date"><?php echo $testimonial['date'] ?></p>
 
                                     </div>
 

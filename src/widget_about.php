@@ -29,20 +29,20 @@ class reyhane_about extends \WP_Widget
 
         if ( ! empty( $instance['title'] ) ) {
 
-            printf("<p class='reyhane-about-widget-title reyhane-typography-s1 reyhane-color-netural-900'>%s</p>", $instance['title']);
+            printf("<p class='reyhane-about-widget-title reyhane-typography-s1 reyhane-color-netural-900'>%s</p>", \Reyhane\helper::englishToPersianNumber($instance['title']));
 
         }
 
         if ( ! empty( $instance['description'] ) ) {
 
-            printf("<p class='reyhane-about-widget-description reyhane-typography-b2 reyhane-color-netural-600 reyhane-margin-bottom-0'>%s</p>", $instance['description']);
+            printf("<p class='reyhane-about-widget-description reyhane-typography-b2 reyhane-color-netural-600 reyhane-margin-bottom-0'>%s</p>", \Reyhane\helper::englishToPersianNumber($instance['description']));
 
         }
 
 
         if ( ! empty( $instance['quote'] ) ) {
 
-            printf("<p class='reyhane-about-widget-quote reyhane-typography-b2 reyhane-color-netural-900'>%s</p>", $instance['quote']);
+            printf("<p class='reyhane-about-widget-quote reyhane-typography-b2 reyhane-color-netural-900'>%s</p>", \Reyhane\helper::englishToPersianNumber($instance['quote']) );
 
         }
 

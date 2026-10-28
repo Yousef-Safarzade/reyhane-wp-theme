@@ -1,0 +1,462 @@
+@use "mixins";
+
+.page-template-about{
+
+  direction: rtl;
+
+
+
+
+  .reyhane-about-detail-banner{
+
+
+    position: relative;
+
+    height: 450px;
+
+    display: flex;
+
+    direction: rtl;
+
+    align-items: center;
+
+    background-repeat: no-repeat;
+
+    background-position: left center;
+
+    background-size: cover;
+
+
+
+    @include mixins.veryLargeScreen{
+
+      height: 550px;
+
+    }
+
+    @include mixins.mobileResponsive{
+
+      justify-content: center;
+
+      text-align: center;
+
+      height: auto;
+
+      padding-top: 30px;
+
+      background-image: none !important;
+
+      flex-direction: column;
+
+    }
+
+
+
+    .reyhane-about-detail-banner-content-wrapper {
+
+      @include mixins.mobileResponsive{
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+      }
+
+    }
+
+
+
+    .reyhane-about-banner-main-title{
+
+      z-index: 1;
+
+      font: var(--reyhane-typography-h2);
+
+      color : var(--reyhane-color-netural-900);
+
+      margin-bottom: 14px;
+
+      @include mixins.mobileResponsive{
+
+        font: var(--reyhane-typography-h5);
+
+      }
+
+    }
+
+
+
+
+    .reyhane-about-detail-banner-description{
+
+      z-index: 1;
+
+      max-width: 450px;
+
+      font: var(--reyhane-typography-b1);
+
+      color : var(--reyhane-color-netural-700);
+
+      margin-bottom: 24px;
+
+      @include mixins.mobileResponsive{
+
+        font: var(--reyhane-typography-b2);
+
+        max-width: 320px;
+
+      }
+
+    }
+
+
+    .reyhane-about-banner-badges-container{
+
+      display: flex;
+
+      gap: 14px;
+
+      .reyhane-about-banner-badge-item{
+
+        display: flex;
+
+        gap: 8px;
+
+        align-items: center;
+
+        background-color: var(--reyhane-color-netural-50);
+
+        padding: 5px 12px;
+
+        border-radius: 30px;
+
+        .reyhane-about-banner-badge-title{
+
+          font: var(--reyhane-typography-c2);
+
+          color : var(--reyhane-color-netural-600);
+
+          display: flex;
+
+          align-items: center;
+
+          margin-bottom: 0;
+
+        }
+
+        .reyhane-about-banner-badge-icon{
+
+          display: flex;
+
+          align-items: center;
+
+           svg{
+
+             max-width: 16px;
+
+           }
+
+        }
+
+      }
+
+    }
+
+    .reyhane-about-detail-banner-responsive-image{
+
+      display: none;
+
+      background-repeat: no-repeat;
+
+      background-position: center;
+
+      background-size: cover;
+
+      @include mixins.mobileResponsive{
+
+        margin-top: 50px;
+
+        display: block;
+
+        min-height: 400px;
+
+        width: 100%;
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .reyhane-approaches-main-container{
+
+      padding:50px 0;
+
+      .reyhane-approaches-main-title{
+
+        text-align: center;
+
+        font: var(--reyhane-typography-h5);
+
+        color : var(--reyhane-color-netural-900);
+
+        margin-bottom: 32px;
+
+      }
+
+      .reyhane-approaches-items-container{
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        gap: 24px;
+
+        @include mixins.mobileResponsive{
+
+          grid-template-columns: 1fr;
+
+        }
+
+        .reyhane-approaches-item{
+
+          padding:52px 5px;
+
+          max-width: 385px;
+
+          background-color: var(--reyhane-color-netural-50);
+
+          border-radius: 16px;
+
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: center;
+
+          justify-content: center;
+
+          @include mixins.mobileResponsive{
+
+            width: clamp( 320px , 90% , 385px );
+
+            margin:0 auto;
+
+            padding:30px 5px;
+
+          }
+
+          .reyhane-approaches-item-icon{
+
+            max-width: 64px;
+
+            margin-bottom: 24px;
+
+          }
+
+          .reyhane-approaches-item-title{
+
+            font: var(--reyhane-typography-s2);
+
+            color : var(--reyhane-color-netural-900);
+
+            margin-bottom: 8px;
+
+          }
+
+          .reyhane-approaches-item-sub-title{
+
+            font: var(--reyhane-typography-b2);
+
+            color : var(--reyhane-color-netural-600);
+
+            margin-bottom: 0;
+
+          }
+
+        }
+
+      }
+
+  }
+
+
+
+
+
+
+  .reyhane-skills {
+
+    background-color: var(--reyhane-color-netural-50);
+
+    padding:50px 0;
+
+    .reyhane-skills-container{
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 32px;
+
+      @include mixins.mobileResponsive{
+
+        grid-template-columns: 1fr;
+
+        max-width: 90% !important;
+
+        margin: 0 auto !important;
+
+      }
+
+      .right-col{
+
+        display: flex;
+
+        flex-direction: column;
+
+
+        .reyhane-skills-main-title{
+
+          font: var(--reyhane-typography-h5);
+
+          color : var(--reyhane-color-netural-900);
+
+          margin-bottom: 12px;
+        }
+
+
+        .reyhane-skills-main-description{
+
+          font: var(--reyhane-typography-b1);
+
+          color : var(--reyhane-color-netural-700);
+
+          margin-bottom: 32px;
+
+          max-width: 500px;
+
+        }
+
+
+
+
+        .reyhane-skills-items-container{
+
+          list-style: none;
+
+          display: grid;
+
+          grid-template-columns: repeat(2, 1fr);
+
+          grid-template-rows: repeat(3, auto);
+
+          margin-right: 0;
+
+          padding-right: 0;
+
+          @include mixins.mobileResponsive{
+
+            display: flex;
+
+            flex-direction: column;
+
+          }
+
+          .reyhane-skills-item{
+
+            display: flex;
+
+            flex-direction: row;
+
+            gap: 8px;
+
+            font: var(--reyhane-typography-b1);
+
+            color : var(--reyhane-color-netural-700);
+
+
+          }
+
+        }
+
+      }
+
+
+      .left-col{
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+        background-size: cover;
+
+        border-radius: 16px;
+
+        min-height: 300px;
+
+      }
+
+    }
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,139 @@
+jQuery(document).ready(function(){
+
+    initDatesSlider();
+
+    handleSelectDateEvent();
+
+    handleSelectServiceEvent();
+
+    handleSubmitSelectServiceButtonEvent();
+
+
+
+
+
+});
+
+
+
+
+function handleSubmitSelectServiceButtonEvent(){
+
+    if ( $(".reyhane-submit-service-button").length < 0){
+
+        return false;
+
+    }
+
+    $(".reyhane-submit-service-button").on("click", function(){
+
+        if( $(".reyhane-service.selected").length < 1){
+
+            $.toast({
+                heading: 'پیام سیستم',
+                text: '<p>لطفا سرویس مورد نظر خود را انتخاب کنید</p>',
+                showHideTransition: 'fade',
+                icon: 'error',
+                hideAfter: 3000,
+                position : 'bottom-right',
+                loaderBg: '#5CC3E5'
+            })
+
+        } else {
+
+            localStorage.setItem('selectedServiceID' , $(".reyhane-service.selected").attr('data-service-id') );
+
+            $("#services").fadeOut(function(){
+
+                window.dispatchEvent(new Event('resize'));
+
+                $("#calendar").fadeIn();
+
+            })
+
+        }
+
+    });
+
+
+}
+
+function handleSelectServiceEvent(){
+
+    if ( $(".reyhane-service").length < 0){
+
+        return false;
+
+    }
+
+
+    $(".reyhane-service:not(.selected)").on("click", function(){
+
+        $(".reyhane-service.selected").removeClass("selected");
+
+        $(this).addClass("selected");
+
+    })
+
+
+
+}
+
+function handleSelectDateEvent(){
+
+    if ( $(".reyhane-date-item").length < 0){
+
+        return false;
+
+    }
+
+
+    $(".reyhane-date-item:not(.active)").on("click", function(){
+
+        $(".reyhane-date-item.active").removeClass("active");
+
+        $(this).addClass("active");
+
+    })
+
+
+
+}
+
+function initDatesSlider(){
+
+    if($(".reyhane-appointment-dates-container").length < 0){
+
+        return false;
+
+    }
+
+
+
+
+    let $dateSlider = $(".reyhane-appointment-dates-container").flickity({
+        pageDots: false,
+        cellAlign: 'right',
+        rightToLeft: true,
+        groupCells: 3
+
+    });
+
+    $(".reyhane-appointment-arrow.next-arrow").on("click", function(){
+
+        $dateSlider.flickity( 'next', false );
+
+
+
+    })
+
+
+    $(".reyhane-appointment-arrow.previous-arrow").on("click", function(){
+
+        $dateSlider.flickity( 'previous', false );
+
+
+    })
+
+
+}

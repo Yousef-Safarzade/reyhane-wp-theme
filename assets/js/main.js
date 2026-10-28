@@ -5,8 +5,11 @@ jQuery(document).ready(function($){
 
     setFirstFaqItemAsActive();
 
-
     handleServiceDetailTopBarClick();
+
+    handleResponsiveMenuIconClick();
+
+    handleResponsiveMenuCloseIconClick();
 
 
 
@@ -114,6 +117,53 @@ function handleServiceDetailTopBarClick(){
         }, 500);
 
     });
+
+
+}
+
+
+function handleResponsiveMenuIconClick(){
+
+    if( $(".reyhane-responsive-menu-icon").length < 1 ){
+
+        return false;
+
+    }
+
+
+    $(".reyhane-responsive-menu-icon").on("click",function(e){
+
+        e.preventDefault();
+
+        $(".reyhane-responsive-menu-container").toggleClass("hidden");
+
+
+    });
+
+
+
+}
+
+
+
+function handleResponsiveMenuCloseIconClick(){
+
+    if( $(".reyhane-responsive-menu-close-button").length < 1 ){
+
+        return false;
+
+    }
+
+
+    $(".reyhane-responsive-menu-close-button").on("click",function(e){
+
+        e.preventDefault();
+
+        $(".reyhane-responsive-menu-container").addClass("hidden");
+
+
+    });
+
 
 
 }

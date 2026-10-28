@@ -1,8 +1,8 @@
 .single-reyhane-services .reyhane-service-main-wrapper {
   display: grid;
   direction: rtl;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
   grid-template-columns: 285px minmax(0, 1fr);
   gap: 30px;
 }
@@ -44,7 +44,7 @@
   align-items: center;
   padding-right: 16px;
   background-color: var(--reyhane-color-netural-200);
-  color: var(--reyhane-netural-color-700);
+  color: var(--reyhane-color-netural-700);
   font: var(--reyhane-typography-s2);
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-sidebar ul.services-list-container li a.active {
@@ -65,7 +65,7 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
   border-radius: 12px;
   width: 100%;
   margin-bottom: 24px;
@@ -85,7 +85,7 @@
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-top-bar ul.reyhane-service-detail-top-bar-list-container li a {
   padding: 12px 24px;
   font: var(--reyhane-typography-s2);
-  color: var(--reyhane-netural-color-700);
+  color: var(--reyhane-color-netural-700);
   border-radius: 12px;
 }
 @media (max-width: 576px) {
@@ -100,7 +100,7 @@
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail {
   border-radius: 12px;
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
   padding: 32px;
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-main-title {
@@ -109,16 +109,20 @@
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-short-description {
   font: var(--reyhane-typography-s2);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
   margin-bottom: 24px;
 }
-.single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text p {
+.single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text p, .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text ul, .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text li, .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text tr, .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text td, .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text th {
   font: var(--reyhane-typography-b1);
-  color: var(--reyhane-netural-color-700);
+  color: var(--reyhane-color-netural-700);
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text h3 {
   font: var(--reyhane-typography-s1);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
+}
+.single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-content .reyhane-service-content-detail .reyhane-service-detail-content-text h2 {
+  font: var(--reyhane-typography-s1);
+  color: var(--reyhane-color-netural-900);
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-faq {
   margin-top: 24px;
@@ -136,7 +140,7 @@
 }
 .single-reyhane-services .reyhane-service-main-wrapper .reyhane-service-detail-gallery .reyhane-service-detail-gallery-wrapper {
   border-radius: 12px;
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
   padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -181,6 +185,11 @@
     flex-direction: column;
   }
 }
+@media (min-width: 1921px) {
+  .single-reyhane-services .reyhane-service-detail-banner {
+    height: 550px;
+  }
+}
 @media (max-width: 576px) {
   .single-reyhane-services .reyhane-service-detail-banner .reyhane-service-detail-banner-content-wrapper {
     display: flex;
@@ -200,7 +209,9 @@
 .single-reyhane-services .reyhane-service-detail-banner .reyhane-service-detail-banner-description {
   z-index: 1;
   max-width: 450px;
-  margin-bottom: 0;
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-700);
+  margin-bottom: 32px;
 }
 @media (max-width: 576px) {
   .single-reyhane-services .reyhane-service-detail-banner .reyhane-service-detail-banner-description {

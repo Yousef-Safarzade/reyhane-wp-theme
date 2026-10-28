@@ -10,7 +10,7 @@
 
   position: absolute;
 
-  top: 10px;
+  top: 20px;
 
   left: 50%;
 
@@ -49,6 +49,40 @@
 
 
 
+  .reyhane-user-login-header-cta{
+
+    font : var(--reyhane-typography-s2);
+
+    &.logged-in{
+
+      background-color: var(--reyhane-color-primary-300);
+
+      color :  var(--reyhane-color-primary-600);
+
+      &:hover{
+
+        background-color: var(--reyhane-color-primary-300);
+
+      }
+
+    }
+
+    &.guest{
+
+      background-color: var(--reyhane-color-primary-600);
+
+      color :  var(--reyhane-color-netural-50);
+
+      &:hover{
+
+        background-color: var(--reyhane-color-primary-700);
+
+      }
+
+    }
+
+  }
+
   .reyhane-header-logo-text{
 
     margin-bottom: 0;
@@ -62,6 +96,7 @@
       font:var(--reyhane-typography-c2);
 
     }
+
 
   }
 
@@ -81,9 +116,9 @@
 
         text-align: center;
 
-        border-left: 1px solid var(--reyhane-color-400);
+        border-left: 1px solid var(--reyhane-color-netural-400);
 
-        border-right: 1px solid var(--reyhane-color-400);
+        border-right: 1px solid var(--reyhane-color-netural-400);
 
         &:first-child{
 
@@ -103,7 +138,7 @@
 
           font : var(--reyhane-typography-b1);
 
-          color: var(--reyhane-netural-color-900);
+          color: var(--reyhane-color-netural-900);
 
         }
 
@@ -116,6 +151,10 @@
 
 
   .reyhane-header-logo-wrapper{
+
+    font: var(--reyhane-typography-c2);
+
+    color: var(--reyhane-color-netural-900);
 
     .reyhane-header-logo-image{
 
@@ -162,7 +201,7 @@
   }
 
 
-  .reyhane-responsive-menu-container{
+  .reyhane-responsive-menu-icon-container{
 
     display: none;
 
@@ -190,3 +229,209 @@
 
 
 }
+
+
+
+
+
+
+
+.reyhane-responsive-menu-container{
+
+  display: none;
+
+  background: var(--reyhane-color-netural-50);
+
+  position: fixed;
+
+  z-index: 1000;
+
+  height: 100%;
+
+  right: 0;
+
+  top: 0;
+
+  width: 340px;
+
+  padding:30px 20px;
+
+  @include mixins.mobileResponsive{
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+
+  transition: right linear 0.3s;
+
+  .reyhane-responsive-menu-top-section {
+
+    display: flex;
+
+    flex-direction: row;
+
+    .reyhane-responsive-menu-logo {
+
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+
+      justify-content: center;
+
+      .custom-logo-link{
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        img.custom-logo{
+
+          max-width: 40px;
+
+          margin-left: 8px;
+
+        }
+
+      }
+
+
+      .reyhane-responsive-logo-text{
+
+        font : var(--reyhane-typography-c2);
+
+        color : var(--reyhane-color-netural-900);
+
+        max-width: 80px;
+
+        margin-bottom: 0;
+
+      }
+
+    }
+
+
+    .reyhane-responsive-menu-close-button{
+
+      margin-right: auto;
+
+      margin-left: 10px;
+
+      display: flex;
+
+      align-items: center;
+
+    }
+
+  }
+
+
+
+  .reyhane-responsive-menu-bottom-section{
+
+    margin-top: 20px;
+
+    ul{
+
+      list-style: none;
+
+      margin:0;
+
+      padding: 0;
+
+      li{
+
+        font:var(--reyhane-typography-b1);
+
+        color:var(--reyhane-color-netural-900);
+
+        padding: 16px 10px;
+
+        border-radius: 8px;
+
+        display: flex;
+
+        align-items: center;
+
+        a{
+
+          font:inherit;
+
+          color: inherit;
+
+          display: flex;
+
+          gap: 10px;
+
+          img{
+
+            width: 20px;
+
+            height: auto;
+
+          }
+
+        }
+
+        .reyhane-responsive-menu-item-arrow{
+
+          height: 100%;
+
+          margin-right: auto;
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          svg{
+
+            width: 16px;
+
+            height: 16px;
+
+          }
+
+        }
+
+
+        &.current-menu-item{
+
+          background-color: var(--reyhane-color-primary-100);
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+  &.hidden{
+
+    right: -340px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

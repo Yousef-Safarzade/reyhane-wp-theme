@@ -1,0 +1,211 @@
+.page-template-about {
+  direction: rtl;
+}
+.page-template-about .reyhane-about-detail-banner {
+  position: relative;
+  height: 450px;
+  display: flex;
+  direction: rtl;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+@media (min-width: 1921px) {
+  .page-template-about .reyhane-about-detail-banner {
+    height: 550px;
+  }
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-about-detail-banner {
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding-top: 30px;
+    background-image: none !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-about-detail-banner .reyhane-about-detail-banner-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-main-title {
+  z-index: 1;
+  font: var(--reyhane-typography-h2);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 14px;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-about-detail-banner .reyhane-about-banner-main-title {
+    font: var(--reyhane-typography-h5);
+  }
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-detail-banner-description {
+  z-index: 1;
+  max-width: 450px;
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-700);
+  margin-bottom: 24px;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-about-detail-banner .reyhane-about-detail-banner-description {
+    font: var(--reyhane-typography-b2);
+    max-width: 320px;
+  }
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-badges-container {
+  display: flex;
+  gap: 14px;
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-badges-container .reyhane-about-banner-badge-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--reyhane-color-netural-50);
+  padding: 5px 12px;
+  border-radius: 30px;
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-badges-container .reyhane-about-banner-badge-item .reyhane-about-banner-badge-title {
+  font: var(--reyhane-typography-c2);
+  color: var(--reyhane-color-netural-600);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-badges-container .reyhane-about-banner-badge-item .reyhane-about-banner-badge-icon {
+  display: flex;
+  align-items: center;
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-banner-badges-container .reyhane-about-banner-badge-item .reyhane-about-banner-badge-icon svg {
+  max-width: 16px;
+}
+.page-template-about .reyhane-about-detail-banner .reyhane-about-detail-banner-responsive-image {
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-about-detail-banner .reyhane-about-detail-banner-responsive-image {
+    margin-top: 50px;
+    display: block;
+    min-height: 400px;
+    width: 100%;
+  }
+}
+.page-template-about .reyhane-approaches-main-container {
+  padding: 50px 0;
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-main-title {
+  text-align: center;
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 32px;
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container {
+    grid-template-columns: 1fr;
+  }
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container .reyhane-approaches-item {
+  padding: 52px 5px;
+  max-width: 385px;
+  background-color: var(--reyhane-color-netural-50);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container .reyhane-approaches-item {
+    width: clamp(320px, 90%, 385px);
+    margin: 0 auto;
+    padding: 30px 5px;
+  }
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container .reyhane-approaches-item .reyhane-approaches-item-icon {
+  max-width: 64px;
+  margin-bottom: 24px;
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container .reyhane-approaches-item .reyhane-approaches-item-title {
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 8px;
+}
+.page-template-about .reyhane-approaches-main-container .reyhane-approaches-items-container .reyhane-approaches-item .reyhane-approaches-item-sub-title {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 0;
+}
+.page-template-about .reyhane-skills {
+  background-color: var(--reyhane-color-netural-50);
+  padding: 50px 0;
+}
+.page-template-about .reyhane-skills .reyhane-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-skills .reyhane-skills-container {
+    grid-template-columns: 1fr;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .right-col {
+  display: flex;
+  flex-direction: column;
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .right-col .reyhane-skills-main-title {
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-netural-900);
+  margin-bottom: 12px;
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .right-col .reyhane-skills-main-description {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-700);
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .right-col .reyhane-skills-items-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  margin-right: 0;
+  padding-right: 0;
+}
+@media (max-width: 576px) {
+  .page-template-about .reyhane-skills .reyhane-skills-container .right-col .reyhane-skills-items-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .right-col .reyhane-skills-items-container .reyhane-skills-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-700);
+}
+.page-template-about .reyhane-skills .reyhane-skills-container .left-col {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  min-height: 300px;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,408 @@
+.page-template-user-dashboard {
+  direction: rtl;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container {
+  margin-bottom: 180px !important;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 24px;
+  margin-top: 180px !important;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    max-width: 340px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar {
+  padding: 20px 16px;
+  background: var(--reyhane-color-netural-50);
+  border-radius: 12px;
+  position: relative;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar {
+    align-items: self-start;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar .reyhane-user-dashboard-avatar-image {
+  max-width: 48px;
+  margin-bottom: 14px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar .reyhane-user-dashboard-avatar-image {
+    display: none;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar .reyhane-user-dashboard-avatar-user-name {
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 0;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-avatar .reyhane-user-dashboard-avatar-user-phone {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 5px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation {
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation {
+    min-height: 210px;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 14px;
+  border-radius: 12px;
+  gap: 14px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item .item-title {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+  display: flex;
+  align-items: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item .item-icon {
+  display: flex;
+  align-items: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item:hover {
+  background-color: var(--reyhane-color-primary-100);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item:active {
+  background-color: var(--reyhane-color-primary-100) !important;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-navigation .reyhane-user-dashboard-navigation-item.active {
+  background-color: var(--reyhane-color-primary-100) !important;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-logout-button {
+  display: flex;
+  align-items: center;
+  padding-right: 14px;
+  border-radius: 12px;
+  gap: 14px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-logout-button .item-title {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-600);
+  display: flex;
+  align-items: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-sidebar .reyhane-user-dashboard-logout-button .item-icon {
+  display: flex;
+  align-items: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content {
+  padding: 64px;
+  background: var(--reyhane-color-netural-50);
+  border-radius: 12px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content {
+    padding: 30px;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-label {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-600);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-input {
+  padding: 12px;
+  border-radius: 12px;
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+  height: 48px;
+  direction: rtl;
+  text-align: right;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-input:focus {
+  outline: none;
+  border: 1px solid var(--reyhane-accent-color);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-input.has-error {
+  border: 2px solid var(--reyhane-color-error-900);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-custom-select-wrapper {
+  position: relative;
+  display: block;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-custom-select-wrapper .reyhane-edit-user-data-custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 48px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--reyhane-color-netural-600);
+  background: var(--reyhane-color-netural-50);
+  cursor: pointer;
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-900);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-custom-select-wrapper .reyhane-edit-user-data-custom-select:focus {
+  outline: none;
+  border: 1px solid var(--reyhane-accent-color);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form .reyhane-edit-user-form-row .reyhane-edit-user-data-custom-select-wrapper .reyhane-edit-user-data-custom-select-arrow {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form input[type=submit] {
+  width: 100%;
+  height: 50px;
+  font: var(--reyhane-typography-s2);
+  color: var(--reyhane-color-netural-50);
+  background-color: var(--reyhane-accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  margin-top: 30px;
+  transition: all linear 0.2s;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form input[type=submit]:hover {
+  background-color: var(--reyhane-color-primary-700);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-dashboard-content .reyhane-edit-user-data-form.doing-ajax {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-bottom: 1px solid var(--reyhane-color-netural-500);
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-title {
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-600);
+  height: 32px;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-value {
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+  height: 50px;
+  align-items: center;
+  display: flex;
+  word-spacing: 2px;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-value {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-value.success-value span {
+  background: var(--reyhane-color-secondary-100);
+  border: 1px solid var(--reyhane-color-secondary-600);
+  color: var(--reyhane-color-secondary-600);
+  border-radius: 8px;
+  height: 32px;
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-value.canceled-value span {
+  padding: 6px 15px;
+  background: var(--reyhane-color-error-400);
+  border: 1px solid var(--reyhane-color-error-900);
+  color: var(--reyhane-color-error-900);
+  border-radius: 8px;
+  height: 32px;
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container .reyhane-user-appointment-item .appointment-data-column .column-value .reyhane-view-appointment-detail-button {
+  background: transparent;
+  border: 1px solid var(--reyhane-accent-color);
+  font: var(--reyhane-typography-b3);
+  color: var(--reyhane-accent-color);
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container.no-appointments {
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container.no-appointments .reyhane-no-appointment-found-message {
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-netural-900);
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-appointments-container.no-appointments .reyhane-no-appointment-found-message {
+    text-align: center;
+    font: var(--reyhane-typography-b1);
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container.no-invoice {
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container.no-invoice .reyhane-no-invoice-found-message {
+  font: var(--reyhane-typography-h5);
+  color: var(--reyhane-color-netural-900);
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container.no-invoice .reyhane-no-invoice-found-message {
+    text-align: center;
+    font: var(--reyhane-typography-b1);
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(190px, 1fr));
+  gap: 30px;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item.hide-column-title .column-title {
+  display: none !important;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item.hide-column-title .column-title {
+    display: flex !important;
+  }
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--reyhane-color-netural-500);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-title {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  font: var(--reyhane-typography-b2);
+  color: var(--reyhane-color-netural-600);
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-value {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  font: var(--reyhane-typography-b1);
+  color: var(--reyhane-color-netural-900);
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-value {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-value.success span {
+  padding: 0 15px;
+  background: var(--reyhane-color-secondary-100);
+  border: 1px solid var(--reyhane-color-secondary-600);
+  color: var(--reyhane-color-secondary-600);
+  border-radius: 8px;
+  height: 32px;
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+.page-template-user-dashboard .reyhane-user-dashboard-main-container .reyhane-user-invoices-container .reyhane-user-invoice-item .invoice-data-column .column-value.error span {
+  padding: 0 15px;
+  background: var(--reyhane-color-error-400);
+  border: 1px solid var(--reyhane-color-error-900);
+  color: var(--reyhane-color-error-900);
+  border-radius: 8px;
+  height: 32px;
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+
+/*# sourceMappingURL=userDashboard.css.map */

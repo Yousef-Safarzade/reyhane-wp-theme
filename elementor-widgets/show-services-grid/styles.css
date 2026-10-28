@@ -36,9 +36,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--reyhane-color-50);
+  background-color: var(--reyhane-color-netural-50);
   border-radius: 16px;
   flex-direction: column;
+  transition: all linear 0.2s;
 }
 @media (max-width: 576px) {
   .reyhane-show-services-grid-main-container .reyhane-show-services-grid-item {
@@ -52,13 +53,16 @@
 }
 .reyhane-show-services-grid-main-container .reyhane-show-services-grid-item .reyhane-show-services-grid-item-title {
   font: var(--reyhane-typography-s2);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
   margin-bottom: 8px;
 }
 .reyhane-show-services-grid-main-container .reyhane-show-services-grid-item .reyhane-show-services-grid-item-sub-title {
   font: var(--reyhane-typography-b2);
   color: var(--reyhane-color-netural-600);
   margin-bottom: 0;
+}
+.reyhane-show-services-grid-main-container .reyhane-show-services-grid-item:hover {
+  box-shadow: 0px 9px 30px 0px var(--reyhane-color-netural-400);
 }
 
 /*# sourceMappingURL=styles.css.map */

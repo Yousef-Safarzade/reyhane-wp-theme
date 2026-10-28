@@ -1,5 +1,5 @@
 .reyhane-about-card-main-container {
-  background: var(--reyhane-color-50);
+  background: var(--reyhane-color-netural-50);
   border-radius: 24px;
   padding: 64px 48px;
   display: flex;
@@ -45,7 +45,7 @@
 }
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-badge-container .reyhan-about-card-badge-text {
   font: var(--reyhane-typography-c1);
-  color: var(--reyhane-color-50);
+  color: var(--reyhane-color-netural-50);
   margin-bottom: 0;
 }
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-badge-container .reyhan-about-card-badge-icon {
@@ -58,11 +58,11 @@
   height: 18px;
 }
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-badge-container .reyhan-about-card-badge-icon svg path {
-  fill: var(--reyhane-color-50);
+  fill: var(--reyhane-color-netural-50);
 }
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-title {
   font: var(--reyhane-typography-h4);
-  color: var(--reyhane-netural-color-900);
+  color: var(--reyhane-color-netural-900);
   margin-bottom: 8px;
 }
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-subtitle-container {
@@ -86,9 +86,13 @@
 .reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-cta {
   font: var(--reyhane-typography-s2);
   background: var(--reyhane-color-primary-600);
-  color: var(--reyhane-color-50);
+  color: var(--reyhane-color-netural-50);
   max-width: 141px;
   justify-content: center;
+  transition: background-color linear 0.1s;
+}
+.reyhane-about-card-main-container .reyhane-about-card-meta-container .reyhane-about-card-cta:hover {
+  background-color: var(--reyhane-color-primary-700);
 }
 
 /*# sourceMappingURL=styles.css.map */

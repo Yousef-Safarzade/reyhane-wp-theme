@@ -2,6 +2,8 @@
 
 .reyhane-faq-container{
 
+  max-width: 790px !important;
+
   display: flex;
 
   margin-top : 20px;
@@ -16,9 +18,11 @@
 
   .reyhane-faq-item{
 
+    direction: rtl;
+
     position: relative;
 
-    background-color: var(--reyhane-color-50);
+    background-color: var(--reyhane-color-netural-50);
 
     border-radius: 12px;
 
@@ -44,7 +48,7 @@
 
         font: var(--reyhane-typography-s2);
 
-        color: var(--reyhane-netural-color-900);
+        color: var(--reyhane-color-netural-900);
 
         margin-bottom: 0;
 
@@ -133,7 +137,7 @@
 
         background-color: var(--reyhane-accent-color);
 
-        color : var(--reyhane-color-50);
+        color : var(--reyhane-color-netural-50);
 
         .minus{
 

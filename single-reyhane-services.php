@@ -23,7 +23,7 @@ $current_post_id = get_the_ID();
         <div class="reyhane-service-sidebar reyhane-bg-color-50">
 
 
-            <p class="reyhane-typography-s1 reyhane-netural-color-900">
+            <p class="reyhane-typography-s1 reyhane-color-netural-900">
 
                 خدمات ما
 
@@ -35,11 +35,13 @@ $current_post_id = get_the_ID();
 
                     $title = get_the_title($related_service);
 
+                    $menu_title = get_field('menu_title', $related_service);
+
                     $permalink = get_permalink( $related_service);
 
                     $active = $related_service === $current_post_id ? 'active' : '';
 
-                    printf('<li class="service-list-item"><a class="%s" href="%s">%s</a></li>', $active , $permalink, $title);
+                    printf('<li class="service-list-item"><a class="%s" href="%s">%s</a></li>', $active , $permalink, $menu_title);
 
                  } ?>
 
@@ -86,7 +88,7 @@ $current_post_id = get_the_ID();
 
                 <div class="reyhane-service-detail-content-text">
 
-                    <?php echo get_the_content(); ?>
+                    <?php echo apply_filters('the_content',get_the_content()); ?>
 
                 </div>
 
@@ -140,7 +142,7 @@ $current_post_id = get_the_ID();
 
                 $question = [];
 
-                for($i=1; $i<=5; $i++){
+                for($i=1; $i<=10; $i++){
 
                     if ( !empty($meta_data['question_'.$i]) ) {
 

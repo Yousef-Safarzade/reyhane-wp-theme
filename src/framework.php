@@ -19,3 +19,13 @@ add_action( 'after_setup_theme', function () {
 \Reyhane\TestimonialPostType::define_hooks();
 
 \Reyhane\ElementorWidgets::define_hooks();
+
+\Reyhane\ThemeSettings::init();
+
+\Reyhane\ThemeSettings::define_hooks();
+
+\Reyhane\helper::define_hooks();
+
+\Reyhane\BooklyHelper::define_hooks();
+
+\Reyhane\Authentication::define_hooks();

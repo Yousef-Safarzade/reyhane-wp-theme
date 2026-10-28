@@ -30,7 +30,7 @@ class reyhane_work_hour extends \WP_Widget
                 "<p class='reyhane-typography-b2 reyhane-color-netural-600'>%s</p>
                 <p class='reyhane-typography-b2 reyhane-color-netural-900'>%s</p>",
                 'ساعت کاری ' ,
-                $instance['work_hour']
+                    \Reyhane\helper::englishToPersianNumber( $instance['work_hour'] )
             );
 
 

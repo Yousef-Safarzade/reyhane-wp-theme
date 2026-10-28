@@ -233,7 +233,7 @@ class reyhane_about_card_widget extends \Elementor\Widget_Base {
 
                         <p>
 
-                            <?php echo $settings['subtitle_right'];  ?>
+                            <?php echo \Reyhane\helper::englishToPersianNumber($settings['subtitle_right']);  ?>
 
                         </p>
 
@@ -242,7 +242,7 @@ class reyhane_about_card_widget extends \Elementor\Widget_Base {
 
                         <p>
 
-                            <?php echo $settings['subtitle_left'];  ?>
+                            <?php echo \Reyhane\helper::englishToPersianNumber($settings['subtitle_left']);  ?>
 
                         </p>
 
@@ -256,7 +256,7 @@ class reyhane_about_card_widget extends \Elementor\Widget_Base {
                     </p>
 
 
-                    <a class="reyhane-about-card-cta reyhane-button-large" href="<?php $settings['cta_link']['url']; ?>" title="<?php $settings['main_title']; ?>">
+                    <a class="reyhane-about-card-cta reyhane-button-large" href="<?php echo $settings['cta_link']['url']; ?>" title="<?php $settings['main_title']; ?>">
 
                         <?php echo $settings['cta_title'];  ?>
 

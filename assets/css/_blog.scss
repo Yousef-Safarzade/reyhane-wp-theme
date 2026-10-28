@@ -1,0 +1,468 @@
+@use "_mixins";
+
+/* ==========================================
+   Grid Blog Item
+========================================== */
+
+
+.reyhane-blog-grid-item{
+
+  padding: 14px;
+
+  border-radius: 16px;
+
+  border: 1px solid var(--reyhane-color-primary-300);
+
+  @include mixins.mobileResponsive{
+
+    max-width: 320px;
+
+    margin: 0 auto;
+
+
+  }
+
+  .reyhane-blog-grid-item-thumbnail-container{
+
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 170px;
+
+    img{
+
+      border-radius: 12px;
+
+      width: 100%;
+
+      height: auto;
+
+    }
+
+  }
+
+  .reyhane-blog-grid-item-meta-data{
+
+    display: flex;
+
+    flex-direction: column;
+
+    .reyhane-blog-grid-item-date{
+
+      font:var(--reyhane-typography-c1);
+
+      color: var(--reyhane-color-netural-600);
+
+      margin-bottom: 8px;
+
+      word-spacing: 5px;
+
+    }
+
+    .reyhane-blog-grid-item-title{
+
+      font:var(--reyhane-typography-s2);
+
+      color: var(--reyhane-color-netural-900);
+
+      margin-bottom: 8px;
+
+    }
+
+    .reyhane-blog-grid-item-excerpt{
+
+      font:var(--reyhane-typography-b2);
+
+      color: var(--reyhane-color-netural-600);
+
+      margin-bottom: 14px;
+
+    }
+
+    .reyhane-blog-grid-item-cta{
+
+      display: flex;
+
+      border-radius: 8px;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background-color: var(--reyhane-accent-color);
+
+      color: var(--reyhane-color-netural-50);
+
+      font : var(--reyhane-typography-c2);
+
+      width: 110px;
+
+      height: 32px;
+
+      transition: background-color linear 0.1s;
+
+      &:hover{
+
+        background-color: var(--reyhane-color-primary-700);
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   Single Post
+========================================== */
+
+
+
+.single-post{
+
+
+  .reyhane-blog-main-container {
+
+    display: grid;
+
+    grid-template-columns: 7fr 2fr;
+
+    gap: 25px;
+
+    margin-top: 130px !important;
+
+    margin-bottom: 130px !important;
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+      max-width: 90% !important;
+
+      margin-top: 30px !important;
+
+    }
+
+    .reyhane-blog-content{
+
+      background: var(--reyhane-color-netural-50);
+
+      padding: 32px;
+
+      @include mixins.mobileResponsive{
+
+        padding: 20px;
+
+
+      }
+
+      border-radius: 12px;
+
+      .reyhane-blog-title{
+
+        font : var(--reyhane-typography-h3);
+
+        color: var(--reyhane-color-netural-900);
+
+        margin-bottom: 16px;
+
+      }
+
+
+      .reyhane-blog-meta {
+
+        display: flex;
+
+        gap: 10px;
+
+        font : var(--reyhane-typography-c1);
+
+        word-spacing: 2px;
+
+        margin-bottom: 32px;
+
+
+        @include mixins.mobileResponsive{
+
+          display: flex;
+
+          flex-direction: column;
+
+          gap: 5px;
+
+          word-spacing: 0;
+
+        }
+
+
+        .meta-separator{
+
+          @include mixins.mobileResponsive{
+
+            display: none;
+
+          }
+
+        }
+
+        .reyhane-blog-meta-item{
+
+          @include mixins.mobileResponsive{
+
+            display: flex;
+
+            flex-direction: row;
+
+            align-items: flex-start;
+
+            gap: 6px;
+
+          }
+
+          .meta-title{
+
+            color: var(--reyhane-color-netural-700);
+
+          }
+
+          .meta-value{
+
+            color: var(--reyhane-color-netural-900);
+
+            a{
+
+              font: inherit;
+
+              color: inherit;
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+
+      .blog-main-image{
+
+        img{
+
+          border-radius: 12px;
+
+        }
+
+        margin-bottom: 32px;
+
+      }
+
+    }
+
+
+    .reyhane-blog-related-posts{
+
+      background: var(--reyhane-color-netural-50);
+
+      padding: 32px;
+
+      border-radius: 12px;
+
+      margin-top: 50px;
+
+      @include mixins.mobileResponsive{
+
+        padding: 20px;
+
+
+      }
+
+      .reyhane-related-post-main-title{
+
+        font: var(--reyhane-typography-h5);
+
+        color: var(--reyhane-color-netural-900);
+
+        margin-bottom: 24px;
+
+      }
+
+      .reyhane-blog-related-posts-items-container{
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+
+        @include mixins.mobileResponsive{
+
+          grid-template-columns: 1fr;
+
+
+        }
+
+      }
+
+
+    }
+
+
+
+    .reyhane-blog-sidebar{
+
+      background: var(--reyhane-color-netural-50);
+
+      padding: 24px;
+
+      border-radius: 12px;
+
+      max-height: fit-content;
+
+      @include mixins.mobileResponsive{
+
+        display: none;
+
+      }
+
+    }
+
+
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   Archive Page
+========================================== */
+
+.archive.post,.archive.category,.archive.tag,.blog{
+
+  direction: rtl;
+
+  .reyhane-archive-title-section{
+
+    margin-top: 130px !important;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-bottom: 45px !important;
+
+    @include mixins.mobileResponsive{
+
+      max-width: 90% !important;
+
+      margin-top: 30px !important;
+
+    }
+
+    h1{
+
+      font: var(--reyhane-typography-h2);
+
+      color: var(--reyhanoe-color-netural-900);
+
+      text-align: center;
+
+      margin-bottom: 14px;
+
+      @include mixins.mobileResponsive{
+
+        font: var(--reyhane-typography-h3);
+
+      }
+
+    }
+
+    p{
+
+      font: var(--reyhane-typography-b1);
+
+      color: var(--reyhanoe-color-netural-700);
+
+      text-align: center;
+
+      margin-bottom: 0;
+
+      @include mixins.mobileResponsive{
+
+        max-width: 250px !important;
+
+      }
+
+    }
+
+  }
+
+
+  .reyhane-archive-items-container{
+
+    padding:48px;
+
+    background-color: var(--reyhane-color-netural-50);
+
+    display: grid;
+
+    gap: 24px;
+
+    grid-template-columns: repeat(3,1fr);
+
+    border-radius: 12px;
+
+    margin-bottom: 80px !important;
+
+    &.no-post-found{
+
+      grid-template-columns: 1fr;
+
+    }
+
+    @include mixins.mobileResponsive{
+
+      grid-template-columns: 1fr;
+
+      max-width: 90% !important;
+
+    }
+
+    .no-post-found{
+
+      font: var(--reyhane-typography-h4);
+
+      color: var(--reyhanoe-color-netural-900);
+
+      text-align: center;
+
+    }
+
+  }
+
+
+}
+

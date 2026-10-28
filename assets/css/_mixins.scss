@@ -30,3 +30,29 @@
   }
 
 }
+
+
+
+
+@mixin largeScreen{
+
+  @media (min-width:1280px) and (max-width: 1920px){
+
+    @content
+
+  }
+
+}
+
+
+
+
+@mixin veryLargeScreen{
+
+  @media (min-width:1921px){
+
+    @content
+
+  }
+
+}

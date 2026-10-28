@@ -11,5 +11,7 @@
             "email": "jo.safarzade@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "morilog/jalali": "^3.5"
+    }
 }

@@ -86,7 +86,7 @@ class reyhane_show_services_grid_widget extends \Elementor\Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-        $services = \Reyhane\ServicesPostType::get_all_services_with_data();
+        $services = \Reyhane\ServicesPostType::get_all_services_with_data($settings['columns']);
 
         $this->render_show_services_grid($settings, $services);
 
@@ -105,13 +105,13 @@ class reyhane_show_services_grid_widget extends \Elementor\Widget_Base {
 
         ob_start(); ?>
 
-        <div class="reyhane-show-services-grid-main-container columns-<?php echo $settings['columns'];?>" >
+        <div class="reyhane-show-services-grid-main-container columns-<?php echo $settings['columns'];?> reyhane-container reyhane-center-container"  >
 
             <?php foreach( $services as $service => $item ){ ?>
 
-                    <a class="reyhane-show-services-grid-item" href="<?php echo $item['permalink'];?> ?>" title="<?php echo $item['title'];?> ?>">
+                    <a class="reyhane-show-services-grid-item" href="<?php echo $item['permalink'];?>" title="<?php echo $item['title'];?>">
 
-                        <img class="reyhane-show-services-grid-item-image" src="<?php echo $item['thumbnail_url'];?> ?>" alt="<?php echo $item['title'];?> ?>" >
+                        <img class="reyhane-show-services-grid-item-image" src="<?php echo $item['thumbnail_url'];?>" alt="<?php echo $item['title'];?>" >
 
                         <p class="reyhane-show-services-grid-item-title"><?php echo $item['title'];?></p>
 

@@ -22,7 +22,7 @@
   width: 40px;
   height: 40px;
   border-radius: 24px;
-  background: var(--reyhane-color-50);
+  background: var(--reyhane-color-netural-50);
   overflow: hidden;
   transition: all linear 0.3s;
 }

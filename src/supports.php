@@ -52,6 +52,18 @@ class supports
 
         }
 
+
+
+        register_sidebar([
+            'name'          => __('Post Sidebar', 'reyhane-wp-theme'),
+            'id'            => 'reyhane-post-sidebar',
+            'description'   => __('Sidebar Show in Single Posts', 'reyhane-wp-theme'),
+            'before_widget' => '<div id="%1$s" class="post-sidebar-widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="post-sidebar-widget-title">',
+            'after_title'   => '</h3>',
+        ]);
+
     }
 
 

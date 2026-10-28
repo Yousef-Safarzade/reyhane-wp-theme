@@ -1,0 +1,81 @@
+.reyhane-make-appointment-double-button {
+
+  display: flex;
+
+  gap: 14px;
+
+  .make-appointment{
+
+    background: var(--reyhane-accent-color);
+
+    .reyhane-button-text{
+
+      color: var(--reyhane-color-netural-50);
+
+    }
+
+    transition: background-color linear 0.1s;
+
+    &:hover{
+
+      background-color: var(--reyhane-color-primary-700);
+
+    }
+
+  }
+
+
+
+  .get-consultant{
+
+    background: var(--reyhane-color-secondary-600);
+
+    .reyhane-button-text{
+
+      color: var(--reyhane-color-netural-50);
+
+    }
+
+    transition: background-color linear 0.1s;
+
+    &:hover{
+
+      background-color: var(--reyhane-color-secondary-700);
+
+    }
+
+  }
+
+
+  &.footer-double-button{
+
+    .make-appointment{
+
+      background: var(--reyhane-color-netural-50);
+
+      .reyhane-button-text{
+
+        color: var(--reyhane-accent-color);
+
+      }
+
+      .reyhane-button-icon{
+
+        svg{
+
+          path{
+
+            stroke : var(--reyhane-accent-color);
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+}

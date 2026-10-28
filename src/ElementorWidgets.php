@@ -34,6 +34,21 @@ class ElementorWidgets
 
         $widgets_manager->register( new \reyhane_show_testimonials_grid() );
 
+
+        require_once config::$elementorWidgetPath . '/faq/index.php';
+
+        $widgets_manager->register( new \reyhane_faq_widget() );
+
+
+        require_once config::$elementorWidgetPath . '/blog-grid/index.php';
+
+        $widgets_manager->register( new \reyhane_blog_grid_widget() );
+
+
+        require_once config::$elementorWidgetPath . '/big-intro/index.php';
+
+        $widgets_manager->register( new \reyhane_big_intro_widget() );
+
     }
 
 }
