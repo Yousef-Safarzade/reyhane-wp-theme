@@ -2,7 +2,7 @@
 
     <div class="reyhane-appointment-top-bar-item active-step">
 
-        <div class="reyhane-appointment-top-bar-item-icon">
+        <div class="reyhane-appointment-top-bar-item-icon" data-id="service">
 
             <?php \Reyhane\helper::print_svg(\Reyhane\config::$imgPath . "/svg/appointment-step-services.svg"); ?>
 
@@ -18,7 +18,7 @@
 
     </div>
 
-    <div class="reyhane-appointment-top-bar-item">
+    <div class="reyhane-appointment-top-bar-item" data-id="calendar">
 
         <div class="reyhane-appointment-top-bar-item-icon">
 
@@ -36,7 +36,7 @@
 
     </div>
 
-    <div class="reyhane-appointment-top-bar-item">
+    <div class="reyhane-appointment-top-bar-item" data-id="payment">
 
         <div class="reyhane-appointment-top-bar-item-icon">
 
@@ -54,7 +54,7 @@
 
     </div>
 
-    <div class="reyhane-appointment-top-bar-item">
+    <div class="reyhane-appointment-top-bar-item" data-id="finish">
 
         <div class="reyhane-appointment-top-bar-item-icon">
 

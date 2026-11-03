@@ -220,6 +220,53 @@ class BooklyHelper
 
 
 
+    public static function check_user_session(){
+
+        $user_id = get_current_user_id();
+
+        if( !$user_id ){
+
+            return false;
+
+        }
+
+        $current_session = get_transient('bookly_session_'.$user_id);
+
+        if( empty($current_session) ){
+
+            return false;
+
+        }
+
+
+        return $current_session;
+
+    }
+
+
+
+    public static function generate_user_session(){
+
+        $user_id = get_current_user_id();
+
+        if( !$user_id ){
+
+            return false;
+
+        }
+
+        $session_id = \Bookly\Lib\FormSession::createSession();
+
+        \Bookly\Lib\FormSession::saveSession( $session_id, [] , 15);
+
+        set_transient('bookly_session_'.$user_id,$session_id);
+
+        return $session_id;
+
+
+    }
+
+
 
 
 }

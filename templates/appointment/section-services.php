@@ -5,7 +5,7 @@ $services = \Reyhane\BooklyHelper::get_all_services();
 
 ?>
 
-<section id="services">
+<section id="services" style="display:none">
 
     <div class="section-top-bar">
 

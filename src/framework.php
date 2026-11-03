@@ -10,6 +10,8 @@ add_action( 'after_setup_theme', function () {
 });
 
 
+\Reyhane\ThemeSettings::init();
+
 \Reyhane\supports::define_hooks();
 
 \Reyhane\widgets::define_hooks();
@@ -19,8 +21,6 @@ add_action( 'after_setup_theme', function () {
 \Reyhane\TestimonialPostType::define_hooks();
 
 \Reyhane\ElementorWidgets::define_hooks();
-
-\Reyhane\ThemeSettings::init();
 
 \Reyhane\ThemeSettings::define_hooks();
 

@@ -43,11 +43,17 @@ function handleSubmitSelectServiceButtonEvent(){
 
             localStorage.setItem('selectedServiceID' , $(".reyhane-service.selected").attr('data-service-id') );
 
+            $(".reyhane-appointment-top-bar-item.active-step").removeClass("active-step");
+
+            $(".reyhane-appointment-top-bar-item[data-id='calendar']").addClass("active-step");
+
             $("#services").fadeOut(function(){
 
                 window.dispatchEvent(new Event('resize'));
 
                 $("#calendar").fadeIn();
+
+
 
             })
 
